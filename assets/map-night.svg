@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+<rect width="390" height="844" fill="#0B1026"/>
+<path d="M60 250 L190 225 L235 300 L215 420 L120 445 L55 380 Z" fill="#14204F"/>
+<path d="M275 150 C320 130 365 165 352 210 C340 250 290 255 270 225 C255 200 255 165 275 150 Z" fill="#0E1838"/>
+<path d="M30 640 C80 615 140 640 130 690 C120 730 60 735 35 705 C15 680 15 655 30 640 Z" fill="#0E1838"/>
+<g stroke="#161E3E" stroke-width="2" fill="none">
+<path d="M0 60 H390 M0 120 H390 M0 180 H390 M0 480 H390 M0 540 H390 M0 600 H390 M0 760 H390 M0 820 H390"/>
+<path d="M30 0 V844 M100 0 V220 M100 460 V844 M160 0 V230 M160 450 V844 M250 0 V844 M320 260 V844 M370 0 V844"/>
+<path d="M0 330 L60 300 M215 360 L390 380 M200 600 L390 660 M0 430 L50 420"/>
+</g>
+<g stroke="#232C57" stroke-width="5" fill="none" stroke-linecap="round">
+<path d="M0 470 C120 465 240 470 390 500"/>
+<path d="M210 0 C215 150 240 300 275 470 C300 600 300 720 290 844"/>
+<path d="M0 230 C60 225 120 215 190 220 C250 225 320 250 390 245"/>
+<path d="M0 580 C80 590 200 560 390 600"/>
+<path d="M120 844 C140 700 150 600 190 470"/>
+</g>
+<g font-family="Satoshi, system-ui, sans-serif" font-size="8.5" font-weight="700" fill="#5D6690" letter-spacing="1.2">
+<text x="88" y="340">CUBBON PARK</text>
+<text x="282" y="196">ULSOOR</text>
+<text x="20" y="463">MG ROAD</text>
+<text x="290" y="520" transform="rotate(-74 290 520)">100FT RD</text>
+<text x="300" y="320">INDIRANAGAR</text>
+<text x="40" y="575">RICHMOND TOWN</text>
+<text x="210" y="700">KORAMANGALA</text>
+<text x="20" y="790">HSR LAYOUT</text>
+</g>
+</svg>
