@@ -4,7 +4,7 @@ Clickable, high-fidelity front-end prototype for **run.co**: a social app for In
 
 Two modes:
 
-- **Chase**: hide and seek with friends. 1 to 2 seekers, everyone else hides. Seekers only see pings of where hiders were, every few minutes.
+- **Chase**: hide and seek with friends. 1 to 2 hunters, everyone else runs and hides. Hunters only see pings of where runners were, every few minutes.
 - **Turf**: async territory capture. Club members' normal runs paint Bengaluru's hex map. Rivals can steal hexes; your club gets a 5-day window to reclaim them.
 
 ## Run it
@@ -24,10 +24,10 @@ Deploys as-is to GitHub Pages, Vercel or Netlify (static site, root folder).
 
 | Section | Screens |
 | --- | --- |
-| Onboarding | Cobalt splash, Chase and Turf cards, sign-in (email code or Google), location permission |
+| Onboarding | Volt splash, Chase and Turf cards, sign-in (email code or Google), location permission |
 | Home and clubs | Home feed with stories, Play sheet, Join with code, demo vs bots, club page, club chat |
-| Hosting Chase | Hosting unlock (₹499), setup with presets, More options, invite, lobby with seeker picks, report / block |
-| Chase in game | Hider view, Mango ping flash, lock-screen alerts, out-of-zone warning, tag confirm, seeker view, team chat, game menu, Cobalt round over, story card |
+| Hosting Chase | Hosting unlock (₹499), setup with presets, More options, invite, lobby with hunter picks, report / block |
+| Chase in game | Runner view, Hunter-pink ping flash, lock-screen alerts, out-of-zone warning, tag confirm, hunter view, team chat, game menu, Volt round over, story card |
 | Turf | Club Pro (₹2,999), Bengaluru Turf map, club run in progress, run summary, solo run |
 | Ranks and you | Ranks (Players / Clubs), leaderboards-off state, profile dashboard, badges, settings |
 
@@ -50,11 +50,12 @@ Edit a screen in `design/`, then run `python3 tools/build.py`.
 ## Design system
 
 - Font: Satoshi (Fontshare). Black for headings and big numbers, Medium for body.
-- Light mode. Paper `#F7F5F0` background, White cards, Midnight `#0B1026` text, in-game bars and map.
-- Cobalt `#2B3BFF`: brand, primary buttons, your team, your club's turf. Used full-bleed on splash, round over and turf captured.
-- Mango `#FFB020`: seekers, pings, rival turf, alerts. Full-bleed on the ping flash.
-- Mint `#2EE59D`: success (reclaimed, never caught).
-- Flat colour, 20 px cards, no gradients, no heavy shadows, one primary action per screen.
+- Volt `#C8FF1A`: brand, runners, your club's turf. Full-bleed on splash, round over, turf captured and the profile header.
+- Ink `#101210`: base and text, primary buttons (Ink with Volt label), in-game bars.
+- Hunter `#FF2E7E`: hunters, tags, pings, rival turf, alerts. Full-bleed on the ping flash.
+- Paper `#F3F4EC`: light-mode background, white cards on top.
+- Night map `#1C201B`: map base.
+- Flat colour, 20 px cards, no gradients, one primary action per screen.
 
 ## Not real yet
 

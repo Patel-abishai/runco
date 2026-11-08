@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#F7F5F0">
+<meta name="theme-color" content="#F3F4EC">
 <title>run.co · prototype</title>
 <link rel="stylesheet" href="styles/runco.css">
 <link rel="stylesheet" href="styles/shell.css">
@@ -35,12 +35,12 @@
 <li><a href="#Report">17 Report</a></li>
 </ol>
 <h3>Chase in game</h3><ol>
-<li><a href="#Hider">18 Hider</a></li>
+<li><a href="#Hider">18 Runner view</a></li>
 <li><a href="#Ping">19 Ping</a></li>
 <li><a href="#Lock">20 Lock</a></li>
 <li><a href="#OutZone">21 OutZone</a></li>
 <li><a href="#Tagged">22 Tagged</a></li>
-<li><a href="#Seeker">23 Seeker</a></li>
+<li><a href="#Seeker">23 Hunter view</a></li>
 <li><a href="#Radio">24 Radio</a></li>
 <li><a href="#GameMenu">25 GameMenu</a></li>
 <li><a href="#RoundOver">26 RoundOver</a></li>
@@ -65,11 +65,11 @@
 <main class="device">
 <section class="screen" id="Main" aria-label="run.co splash" hidden>
 <div class="scr cobalt">
-<svg class="abs" viewBox="0 0 390 420" style="left: 0; top: 40px; width: 390px; height: 420px; opacity: .22" aria-hidden="true"><g fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M120 60l45 26v52l-45 26-45-26V86z"/><path d="M210 60l45 26v52l-45 26-45-26V86z"/><path d="M165 138l45 26v52l-45 26-45-26v-52z"/><path d="M255 138l45 26v52l-45 26-45-26v-52z"/><path d="M75 138l45 26v52l-45 26-45-26v-52z"/><path d="M210 216l45 26v52l-45 26-45-26v-52z"/><path d="M120 216l45 26v52l-45 26-45-26v-52z"/></g></svg>
-<svg class="abs pop" viewBox="0 0 390 420" style="left: 0; top: 40px; width: 390px; height: 420px" aria-hidden="true"><path d="M165 138l45 26v52l-45 26-45-26v-52z" fill="#FFB020"/><path d="M210 60l45 26v52l-45 26-45-26V86z" fill="#FFFFFF"/></svg>
+<svg class="abs" viewBox="0 0 390 420" style="left: 0; top: 40px; width: 390px; height: 420px; opacity: .22" aria-hidden="true"><g fill="none" stroke="#101210" stroke-width="2"><path d="M120 60l45 26v52l-45 26-45-26V86z"/><path d="M210 60l45 26v52l-45 26-45-26V86z"/><path d="M165 138l45 26v52l-45 26-45-26v-52z"/><path d="M255 138l45 26v52l-45 26-45-26v-52z"/><path d="M75 138l45 26v52l-45 26-45-26v-52z"/><path d="M210 216l45 26v52l-45 26-45-26v-52z"/><path d="M120 216l45 26v52l-45 26-45-26v-52z"/></g></svg>
+<svg class="abs pop" viewBox="0 0 390 420" style="left: 0; top: 40px; width: 390px; height: 420px" aria-hidden="true"><path d="M165 138l45 26v52l-45 26-45-26v-52z" fill="#FF2E7E"/><path d="M210 60l45 26v52l-45 26-45-26V86z" fill="#FFFFFF"/></svg>
 <div class="col g24" style="position: absolute; left: 24px; right: 24px; bottom: 44px">
 <div class="col g12">
-<h1 class="d1" style="font-size: 88px">run<span style="color: #FFB020">.</span>co</h1>
+<h1 class="d1" style="font-size: 88px">run<span style="color: #FF2E7E">.</span>co</h1>
 <p class="h2" style="font-weight: 700; font-size: 22px">Bengaluru is the board. Hide, seek and take turf on real streets.</p>
 </div>
 <div class="col g12">
@@ -96,7 +96,7 @@
 <div class="col g12">
 <span class="chip chip-c" style="align-self: flex-start">MODE 1</span>
 <h1 class="d1">Chase.</h1>
-<p class="h3 mu" style="font-weight: 500">Hide and seek on real streets. Seekers only see where you were, every few minutes.</p>
+<p class="h3 mu" style="font-weight: 500">Hide and seek on real streets. Hunters only see where you were, every few minutes.</p>
 </div>
 </div>
 <div class="pad row between" style="padding-bottom: 40px">
@@ -109,9 +109,9 @@
 <div class="scr">
 <div class="top"><span class="wordmark">run<i>.</i>co</span><a class="sm mu b7" href="#SignIn" style="padding: 12px 0">Skip</a></div>
 <div class="pad col g24" style="flex: 1">
-<div style="position: relative; height: 400px; border-radius: 28px; overflow: hidden; background: #0B1026">
+<div style="position: relative; height: 400px; border-radius: 28px; overflow: hidden; background: #101210">
 <div class="map"></div>
-<img class="turfmap" src="assets/turf-v2.svg" alt="" style="object-position: 30% 20%">
+<img class="turfmap" src="assets/turf-volt.svg" alt="" style="object-position: 30% 20%">
 <div class="abs card row between" style="left: 14px; right: 14px; bottom: 14px; padding: 12px 14px"><div class="row g8"><span class="crest cc" style="width: 30px; height: 30px; border-radius: 9px; font-size: 10px">CC</span><span class="b7 sm">Cubbon Crew owns 142 hexes</span></div><span class="chip chip-m" style="height: 26px">2 UNDER ATTACK</span></div>
 </div>
 <div class="col g12">
@@ -145,7 +145,7 @@
 </div>
 <a class="btn btn-c" href="#Permissions">Continue</a>
 <div class="row g12"><span class="hr grow"></span><span class="xs mu b7">OR</span><span class="hr grow"></span></div>
-<a class="btn" href="#Permissions"><span class="b9" style="width: 24px; height: 24px; border-radius: 50%; background: #0B1026; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px">G</span>Continue with Google</a>
+<a class="btn" href="#Permissions"><span class="b9" style="width: 24px; height: 24px; border-radius: 50%; background: #101210; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px">G</span>Continue with Google</a>
 </div>
 <p class="pad xs mu" style="padding-bottom: 40px; text-align: center">Play fair. Look up at crossings. Tag gently.</p>
 </div>
@@ -155,9 +155,9 @@
 <div class="top"><a class="ib" href="#SignIn" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="lbl">Last step</span><span style="width: 44px"></span></div>
 <div class="pad col g24" style="flex: 1; padding-top: 8px">
 <div class="block row center" style="height: 180px; position: relative; overflow: hidden">
-<span class="ripple" style="width: 80px; height: 80px; border-color: #fff"></span>
-<span class="ripple d2" style="width: 80px; height: 80px; border-color: #fff"></span>
-<span style="width: 80px; height: 80px; border-radius: 26px; background: #fff; display: flex; align-items: center; justify-content: center; position: relative"><svg class="ic" viewBox="0 0 24 24" style="width: 38px; height: 38px; stroke: #2B3BFF" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+<span class="ripple" style="width: 80px; height: 80px; border-color: #101210"></span>
+<span class="ripple d2" style="width: 80px; height: 80px; border-color: #101210"></span>
+<span style="width: 80px; height: 80px; border-radius: 26px; background: #fff; display: flex; align-items: center; justify-content: center; position: relative"><svg class="ic" viewBox="0 0 24 24" style="width: 38px; height: 38px; stroke: #101210" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
 </div>
 <div class="col g12">
 <h1 class="h1">Location only<br>while you play.</h1>
@@ -180,7 +180,7 @@
 <div class="top" style="padding-bottom: 8px"><span class="wordmark">run<i>.</i>co</span><div class="row g8"><a class="ib" href="#Lock" aria-label="Notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></svg></a><a class="ib" href="#ClubChat" aria-label="Club chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></a></div></div>
 <div class="body">
 <div class="row g12" style="padding: 8px 20px 16px; overflow-x: auto; scrollbar-width: none; align-items: flex-start">
-<a class="col g8" href="#PlaySheet" style="align-items: center; width: 70px; flex: none"><span class="ring dim"><span class="av" style="width: 60px; height: 60px; font-size: 28px; background: #fff; color: #2B3BFF">+</span></span><span class="xs mu b7">Play</span></a>
+<a class="col g8" href="#PlaySheet" style="align-items: center; width: 70px; flex: none"><span class="ring dim"><span class="av" style="width: 60px; height: 60px; font-size: 28px; background: #101210; color: #C8FF1A">+</span></span><span class="xs mu b7">Play</span></a>
 <a class="col g8" href="#Lobby" style="align-items: center; width: 70px; flex: none"><span class="ring"><span class="av c" style="width: 60px; height: 60px; font-size: 16px">AK</span></span><span class="xs b9 cb">LIVE · 9</span></a>
 <a class="col g8" href="#Club" style="align-items: center; width: 70px; flex: none"><span class="ring"><span class="crest cc" style="width: 60px; height: 60px; border-radius: 50%; font-size: 16px">CC</span></span><span class="xs b7">Your club</span></a>
 <a class="col g8" href="#Turf" style="align-items: center; width: 70px; flex: none"><span class="ring m"><span class="av m" style="width: 60px; height: 60px; font-size: 16px">PR</span></span><span class="xs b9 mg">RUNNING</span></a>
@@ -188,19 +188,19 @@
 <a class="col g8" href="#Club" style="align-items: center; width: 70px; flex: none"><span class="ring dim"><span class="crest cn" style="width: 60px; height: 60px; border-radius: 50%; font-size: 15px">INR</span></span><span class="xs mu">Night Rnrs</span></a>
 </div>
 <div class="pad col g16" style="padding-bottom: 110px">
-<a class="row g12" href="#Paywall" style="background: #0B1026; color: #fff; border-radius: 20px; padding: 14px 16px"><span class="founder">FOUNDER</span><span class="sm grow"><b>Window closes in 6d 14h.</b> Unlock now, keep the badge forever.</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
-<a class="row g12" href="#Turf" style="background: #FFB020; color: #0B1026; border-radius: 20px; padding: 16px"><span class="crest" style="background: #0B1026; color: #FFB020">HH</span><div class="col grow"><span class="b9">HSR Hustlers took 6 hexes</span><span class="sm">Koramangala 5th Block · 4d 12h to reclaim</span></div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+<a class="row g12" href="#Paywall" style="background: #101210; color: #fff; border-radius: 20px; padding: 14px 16px"><span class="founder">FOUNDER</span><span class="sm grow"><b>Window closes in 6d 14h.</b> Unlock now, keep the badge forever.</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+<a class="row g12" href="#Turf" style="background: #FF2E7E; color: #101210; border-radius: 20px; padding: 16px"><span class="crest" style="background: #101210; color: #FF2E7E">HH</span><div class="col grow"><span class="b9">HSR Hustlers took 6 hexes</span><span class="sm">Koramangala 5th Block · 4d 12h to reclaim</span></div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
 <article class="card col g12" style="padding: 0; overflow: hidden">
 <div class="row g12" style="padding: 14px 16px 0"><span class="av c">AK</span><div class="col grow"><span class="b7">@arjun.k</span><span class="xs mu">Club run · Cubbon Crew · 1h</span></div><span class="chip chip-c">+14 HEXES</span></div>
-<a href="#RunSummary" style="position: relative; height: 190px; display: block; margin: 0 12px; border-radius: 16px; overflow: hidden"><div class="map"></div><img class="turfmap" src="assets/turf-v2.svg" alt="" style="object-position: 20% 25%"><svg class="route" viewBox="0 0 366 190" aria-hidden="true"><path d="M40 160 C80 120 90 50 150 60 S250 150 320 40" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></svg></a>
+<a href="#RunSummary" style="position: relative; height: 190px; display: block; margin: 0 12px; border-radius: 16px; overflow: hidden"><div class="map"></div><img class="turfmap" src="assets/turf-volt.svg" alt="" style="object-position: 20% 25%"><svg class="route" viewBox="0 0 366 190" aria-hidden="true"><path d="M40 160 C80 120 90 50 150 60 S250 150 320 40" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></svg></a>
 <div class="row" style="padding: 0 16px; gap: 28px"><div class="col"><span class="num" style="font-size: 28px">8.2</span><span class="xs mu">km</span></div><div class="col"><span class="num" style="font-size: 28px">5:41</span><span class="xs mu">/km</span></div><div class="col"><span class="num cb" style="font-size: 28px">+16</span><span class="xs mu">pts</span></div></div>
-<div class="row g16" style="padding: 0 16px 14px"><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" style="stroke: #2B3BFF; fill: #2B3BFF" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>212</span><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>18</span></div>
+<div class="row g16" style="padding: 0 16px 14px"><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" style="stroke: #FF2E7E; fill: #FF2E7E" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>212</span><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>18</span></div>
 </article>
 <article class="card col g12" style="padding: 0; overflow: hidden">
 <div class="row g12" style="padding: 14px 16px 0"><span class="av l">MR</span><div class="col grow"><span class="b7">@meghna.runs <span class="founder">F</span></span><span class="xs mu">Chase · Indiranagar · 3h</span></div><span class="chip chip-t">NEVER CAUGHT</span></div>
 <a href="#RoundOver" style="position: relative; height: 170px; display: block; margin: 0 12px; border-radius: 16px; overflow: hidden"><div class="map" style="background-position: 80% 40%"></div><div class="zone" style="left: 90px; top: 10px; width: 150px; height: 150px"></div><div class="mate" style="left: 150px; top: 70px"><b></b><span>MEGHNA</span></div></a>
-<p class="sm" style="padding: 0 16px">Hid behind a dosa cart for 11 minutes. Seekers ran past twice.</p>
-<div class="row g16" style="padding: 0 16px 14px"><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" style="stroke: #2B3BFF; fill: #2B3BFF" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>128</span><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>14</span></div>
+<p class="sm" style="padding: 0 16px">Hid behind a dosa cart for 11 minutes. Hunters ran past twice.</p>
+<div class="row g16" style="padding: 0 16px 14px"><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" style="stroke: #FF2E7E; fill: #FF2E7E" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>128</span><span class="row g4 sm b7"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>14</span></div>
 </article>
 </div>
 </div>
@@ -222,11 +222,11 @@
 <div class="sheet col g12 rise">
 <div class="grab"></div>
 <div class="row between"><h2 class="h2">Let’s go</h2><a class="ib" href="#Home" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a></div>
-<a class="opt" href="#ClubRun" style="background: #2B3BFF; color: #fff"><span class="oi" style="background: #fff; color: #2B3BFF"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/></svg></span><div class="col grow g4"><span class="h3">Start club run</span><span class="sm" style="opacity: .8">Capture turf for Cubbon Crew</span></div></a>
-<a class="opt" href="#Paywall"><span class="oi" style="background: #0B1026; color: #fff"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span><div class="col grow g4"><span class="h3">Host Chase</span><span class="sm mu">Hide and seek with friends</span></div><span class="chip" style="height: 26px">₹499</span></a>
-<a class="opt" href="#JoinCode"><span class="oi" style="background: #fff; border: 1.5px solid #E7E3DA"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h6v6h-6z"/></svg></span><div class="col grow g4"><span class="h3">Join with code</span><span class="sm mu">6 characters from your host</span></div></a>
-<a class="opt" href="#SoloRun"><span class="oi" style="background: #fff; border: 1.5px solid #E7E3DA"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M10 22l2-7 3 3v4M7 12l3-4 4 1 3 3"/></svg></span><div class="col grow g4"><span class="h3">Start solo run</span><span class="sm mu">Stats only, no turf</span></div></a>
-<a class="opt" href="#Demo"><span class="oi" style="background: #FFB020"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg></span><div class="col grow g4"><span class="h3">Try a demo</span><span class="sm mu">10 min solo vs 2 bots</span></div></a>
+<a class="opt" href="#ClubRun" style="background: #C8FF1A; color: #101210"><span class="oi" style="background: #101210; color: #C8FF1A"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/></svg></span><div class="col grow g4"><span class="h3">Start club run</span><span class="sm" style="opacity: .8">Capture turf for Cubbon Crew</span></div></a>
+<a class="opt" href="#Paywall"><span class="oi" style="background: #101210; color: #fff"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span><div class="col grow g4"><span class="h3">Host Chase</span><span class="sm mu">Hide and seek with friends</span></div><span class="chip" style="height: 26px">₹499</span></a>
+<a class="opt" href="#JoinCode"><span class="oi" style="background: #fff; border: 1.5px solid #DFE1D6"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h6v6h-6z"/></svg></span><div class="col grow g4"><span class="h3">Join with code</span><span class="sm mu">6 characters from your host</span></div></a>
+<a class="opt" href="#SoloRun"><span class="oi" style="background: #fff; border: 1.5px solid #DFE1D6"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M10 22l2-7 3 3v4M7 12l3-4 4 1 3 3"/></svg></span><div class="col grow g4"><span class="h3">Start solo run</span><span class="sm mu">Stats only, no turf</span></div></a>
+<a class="opt" href="#Demo"><span class="oi" style="background: #FF2E7E"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg></span><div class="col grow g4"><span class="h3">Try a demo</span><span class="sm mu">10 min solo vs 2 bots</span></div></a>
 </div>
 </div>
 </section>
@@ -236,7 +236,7 @@
 <div class="pad col g24" style="flex: 1; padding-top: 20px">
 <div class="col g12"><h1 class="h1">Got a code?</h1><p class="mu" style="font-size: 16px">Six characters. Your host has it.</p></div>
 <div class="code"><b class="on">K</b><b class="on">R</b><b class="on">M</b><b class="on">7</b><b class="on">Q</b><b class="on">X</b></div>
-<a class="card row g12" href="#Lobby" style="border-color: #2B3BFF; border-width: 2px">
+<a class="card row g12" href="#Lobby" style="border-color: #101210; border-width: 2px">
 <span class="av c">AK</span>
 <div class="col grow g4"><span class="b7">Indiranagar Night Chase</span><span class="xs mu">Classic · 45 min · 1.2 km zone</span><span class="live">9 IN LOBBY</span></div>
 <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
@@ -275,15 +275,15 @@
 <div class="col g4"><span class="h3">Cubbon Crew <a class="chip chip-c" href="#ClubPro" style="height: 22px; font-size: 11px; margin-left: 4px">CLUB PRO</a></span><span class="sm mu">Bengaluru’s loudest 6 AM. We run Cubbon, we defend Indiranagar, we bring filter coffee.</span></div>
 <div class="row g8"><a class="btn btn-c btn-sm grow" href="#ClubChat" style="height: 44px">Join club</a><a class="btn btn-sm grow" href="#ClubChat" style="height: 44px">Chat</a></div>
 <div class="card col g8" style="padding: 14px"><span class="lbl">Weekly runs</span><div class="row between sm"><span class="b7">Tue · Thu</span><span class="mu">6:00 AM · Cubbon bandstand</span></div><div class="row between sm"><span class="b7">Sat</span><span class="cb b7">6:00 AM · Turf push, Indiranagar</span></div><div class="row between sm"><span class="b7">Sun</span><span class="mu">7:00 AM · Long run, Ulsoor</span></div></div>
-<a href="#Turf" style="position: relative; height: 160px; border-radius: 20px; overflow: hidden; display: block; background: #0B1026"><div class="map"></div><img class="turfmap" src="assets/turf-v2.svg" alt="Cubbon Crew turf mini-map" style="object-position: 25% 22%"><span class="abs chip" style="left: 12px; bottom: 12px; background: #fff">142 hexes · 2 under attack</span></a>
+<a href="#Turf" style="position: relative; height: 160px; border-radius: 20px; overflow: hidden; display: block; background: #101210"><div class="map"></div><img class="turfmap" src="assets/turf-volt.svg" alt="Cubbon Crew turf mini-map" style="object-position: 25% 22%"><span class="abs chip" style="left: 12px; bottom: 12px; background: #fff">142 hexes · 2 under attack</span></a>
 <div class="seg"><span class="on">Recaps</span><a href="#ClubChat">Chat</a><span>Members</span></div>
 </div>
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding: 12px 0 24px">
-<a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #2B3BFF; color: #fff; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">+14</span><span class="xs b7">hexes · Sat</span></a>
+<a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #C8FF1A; color: #101210; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">+14</span><span class="xs b7">hexes · Sat</span></a>
 <a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 70% 50%"></div><svg class="route" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 80 C30 40 60 70 90 20" fill="none" stroke="#fff" stroke-width="3"/></svg></a>
-<a href="#RoundOver" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #FFB020; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">Chase</span><span class="xs b7">hiders won</span></a>
+<a href="#RoundOver" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #FF2E7E; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">Chase</span><span class="xs b7">runners won</span></a>
 <a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 10% 10%"></div><svg class="route" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 20 C40 60 60 30 80 85" fill="none" stroke="#fff" stroke-width="3"/></svg></a>
-<a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #2EE59D; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">6</span><span class="xs b7">hexes reclaimed</span></a>
+<a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden; background: #C8FF1A; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">6</span><span class="xs b7">hexes reclaimed</span></a>
 <a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 40% 60%"></div><svg class="route" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 50 C40 10 70 90 90 40" fill="none" stroke="#fff" stroke-width="3"/></svg></a>
 </div>
 </div>
@@ -291,14 +291,14 @@
 </section>
 <section class="screen" id="ClubChat" aria-label="Club chat" hidden>
 <div class="scr">
-<div class="top" style="border-bottom: 1px solid #E7E3DA; background: #fff"><a class="ib" href="#Club" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><div class="row g8 grow"><span class="crest cc" style="width: 36px; height: 36px; font-size: 12px">CC</span><div class="col"><span class="b7">Cubbon Crew</span><span class="xs mu">412 members · 37 online</span></div></div></div>
+<div class="top" style="border-bottom: 1px solid #DFE1D6; background: #fff"><a class="ib" href="#Club" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><div class="row g8 grow"><span class="crest cc" style="width: 36px; height: 36px; font-size: 12px">CC</span><div class="col"><span class="b7">Cubbon Crew</span><span class="xs mu">412 members · 37 online</span></div></div></div>
 <div class="body pad col g12" style="padding-top: 16px; padding-bottom: 16px">
-<a class="row g12" href="#Turf" style="background: #FFB020; border-radius: 20px; padding: 14px"><span class="crest" style="background: #0B1026; color: #FFB020; width: 34px; height: 34px; font-size: 11px">HH</span><span class="sm grow"><b>6 hexes lost in Koramangala</b><br>4d 12h to reclaim</span><span class="btn btn-n btn-sm" style="height: 36px">Map</span></a>
+<a class="row g12" href="#Turf" style="background: #FF2E7E; border-radius: 20px; padding: 14px"><span class="crest" style="background: #101210; color: #FF2E7E; width: 34px; height: 34px; font-size: 11px">HH</span><span class="sm grow"><b>6 hexes lost in Koramangala</b><br>4d 12h to reclaim</span><span class="btn btn-n btn-sm" style="height: 36px">Map</span></a>
 <div class="row g8" style="align-items: flex-end"><span class="av s t">KR</span><div class="col g4"><span class="xs mu">@kabir.r</span><div class="card sm" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; max-width: 260px">HSR ran 5th Block twice this week. Saturday loop goes through there.</div></div></div>
 <div class="row g8" style="align-items: flex-end"><span class="av s c">AK</span><div class="col g4"><span class="xs mu">@arjun.k</span><div class="card sm" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; max-width: 260px">Remember: reclaim only counts if we grab one new hex in the same run. Swing past Forum.</div></div></div>
-<div class="col g4" style="align-items: flex-end"><div class="sm" style="padding: 10px 14px; border-radius: 18px 18px 6px 18px; max-width: 260px; background: #2B3BFF; color: #fff; font-weight: 700">In. Filter coffee at Airlines after, on me.</div><span class="xs mu">Seen by 24</span></div>
+<div class="col g4" style="align-items: flex-end"><div class="sm" style="padding: 10px 14px; border-radius: 18px 18px 6px 18px; max-width: 260px; background: #C8FF1A; color: #101210; font-weight: 700">In. Filter coffee at Airlines after, on me.</div><span class="xs mu">Seen by 24</span></div>
 </div>
-<div class="row g8" style="padding: 10px 16px 34px; border-top: 1px solid #E7E3DA; background: #fff"><input class="field grow" placeholder="Message Cubbon Crew" aria-label="Message" style="height: 48px"><a class="ib" href="#Club" aria-label="Send" style="background: #2B3BFF; color: #fff; border-color: #2B3BFF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg></a></div>
+<div class="row g8" style="padding: 10px 16px 34px; border-top: 1px solid #DFE1D6; background: #fff"><input class="field grow" placeholder="Message Cubbon Crew" aria-label="Message" style="height: 48px"><a class="ib" href="#Club" aria-label="Send" style="background: #C8FF1A; color: #101210; border-color: #C8FF1A"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg></a></div>
 </div>
 </section>
 <section class="screen" id="Paywall" aria-label="Hosting unlock" hidden>
@@ -306,7 +306,7 @@
 <div class="top"><a class="ib" href="#PlaySheet" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><a class="sm mu b7" href="#Settings" style="padding: 12px 0">Restore</a></div>
 <div class="body pad col g16">
 <div class="block col g16" style="padding: 24px">
-<span class="founder" style="align-self: flex-start; background: #fff; color: #2B3BFF">FOUNDER WINDOW</span>
+<span class="founder" style="align-self: flex-start; background: #101210; color: #C8FF1A">FOUNDER WINDOW</span>
 <h1 class="d1" style="font-size: 54px">Host<br>Chase.</h1>
 <div class="row g16"><div class="col"><span class="num" style="font-size: 36px">6</span><span class="xs b7">days</span></div><div class="col"><span class="num" style="font-size: 36px">14</span><span class="xs b7">hrs</span></div><div class="col"><span class="num" style="font-size: 36px">22</span><span class="xs b7">min</span></div><span class="sm grow" style="text-align: right">left to keep the Founder badge forever</span></div>
 </div>
@@ -331,7 +331,7 @@
 <div class="handle" style="left: 183px; top: 108px"></div>
 <span class="abs chip" style="left: 158px; top: 226px; background: #fff">1.2 km</span>
 </div>
-<div class="top"><a class="ib" href="#PlaySheet" aria-label="Back" style="background: #fff; color: #0B1026"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="chip" style="background: #fff">Drag to resize zone</span><span style="width: 44px"></span></div>
+<div class="top"><a class="ib" href="#PlaySheet" aria-label="Back" style="background: #fff; color: #101210"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="chip" style="background: #fff">Drag to resize zone</span><span style="width: 44px"></span></div>
 <div class="sheet col g16" style="top: 380px; padding-top: 22px">
 <h2 class="h2">New Chase</h2>
 <div class="row g8">
@@ -339,7 +339,7 @@
 <span class="preset on"><span class="b9" style="font-size: 20px">Classic</span><span class="xs mu">45 min</span></span>
 <span class="preset"><span class="b9" style="font-size: 20px">Long</span><span class="xs mu">90 min</span></span>
 </div>
-<a class="row between" href="#ChaseOptions" style="min-height: 48px; border-top: 1px solid #E7E3DA; padding-top: 8px"><div class="col"><span class="b7">More options</span><span class="xs mu">Ping 5 min · head start 5 min · shrink on</span></div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+<a class="row between" href="#ChaseOptions" style="min-height: 48px; border-top: 1px solid #DFE1D6; padding-top: 8px"><div class="col"><span class="b7">More options</span><span class="xs mu">Ping 5 min · head start 5 min · shrink on</span></div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
 <a class="btn btn-c" href="#Invite">Create game</a>
 </div>
 </div>
@@ -358,7 +358,7 @@
 <div class="row between"><div class="col"><span class="b7">Shrinking zone</span><span class="xs mu">Closes every 10 min</span></div><span class="sw on" role="img" aria-label="On"></span></div>
 <div class="sl"><div class="row between"><span class="b7">Final size</span><span class="b9 cb">400 m</span></div><div class="sl-track"><div class="sl-fill" style="width: 30%"></div><div class="sl-thumb" style="left: 30%"></div></div></div>
 </div>
-<div class="card col g8"><span class="b7">Seekers</span><div class="seg"><span class="on">1 seeker</span><span>2 seekers</span></div></div>
+<div class="card col g8"><span class="b7">Hunters</span><div class="seg"><span class="on">1 hunter</span><span>2 hunters</span></div></div>
 </div>
 <div class="pad" style="padding-top: 12px; padding-bottom: 36px"><a class="btn btn-c" href="#HostChase">Save</a></div>
 </div>
@@ -384,23 +384,23 @@
 <div class="scr">
 <div class="top"><a class="ib" href="#Home" aria-label="Leave lobby"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><div class="col" style="align-items: center"><span class="b7">Indiranagar Night Chase</span><span class="xs mu">KRM7QX · Classic · 45 min</span></div><a class="ib" href="#Invite" aria-label="Invite"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg></a></div>
 <div class="body pad col g16">
-<div class="row between"><span class="live">7 IN · WAITING</span><a class="chip chip-m" href="#Lobby">Random seekers</a></div>
+<div class="row between"><span class="live">7 IN · WAITING</span><a class="chip chip-m" href="#Lobby">Random hunters</a></div>
 <div class="card col" style="padding: 4px 16px">
-<div class="li"><span class="av l">MR</span><div class="col grow"><span class="b7">You <span class="founder">F</span></span><span class="xs mu">Host</span></div><span class="chip">Hider</span></div>
+<div class="li"><span class="av l">MR</span><div class="col grow"><span class="b7">You <span class="founder">F</span></span><span class="xs mu">Host</span></div><span class="chip">Runner</span></div>
 <div class="hr"></div>
-<div class="li"><span class="av c">AK</span><div class="col grow"><span class="b7">@arjun.k</span><span class="xs mu">Cubbon Crew</span></div><span class="chip" style="background: #FFB020">Seeker</span></div>
+<div class="li"><span class="av c">AK</span><div class="col grow"><span class="b7">@arjun.k</span><span class="xs mu">Cubbon Crew</span></div><span class="chip" style="background: #FF2E7E">Hunter</span></div>
 <div class="hr"></div>
-<div class="li"><span class="av">RT</span><div class="col grow"><span class="b7">@rohit.tk</span><span class="xs mu">New</span></div><span class="chip" style="background: #FFB020">Seeker</span></div>
+<div class="li"><span class="av">RT</span><div class="col grow"><span class="b7">@rohit.tk</span><span class="xs mu">New</span></div><span class="chip" style="background: #FF2E7E">Hunter</span></div>
 <div class="hr"></div>
-<div class="li"><span class="av m">PR</span><div class="col grow"><span class="b7">@priya <span class="founder">F</span></span><span class="xs mu">Cubbon Crew</span></div><span class="chip">Hider</span></div>
+<div class="li"><span class="av m">PR</span><div class="col grow"><span class="b7">@priya <span class="founder">F</span></span><span class="xs mu">Cubbon Crew</span></div><span class="chip">Runner</span></div>
 <div class="hr"></div>
-<div class="li"><span class="av t">KR</span><div class="col grow"><span class="b7">@kabir.r</span><span class="xs mu">Indiranagar Night Runners</span></div><span class="chip">Hider</span></div>
+<div class="li"><span class="av t">KR</span><div class="col grow"><span class="b7">@kabir.r</span><span class="xs mu">Indiranagar Night Runners</span></div><span class="chip">Runner</span></div>
 <div class="hr"></div>
-<div class="li"><span class="av">SJ</span><div class="col grow"><span class="b7">@sana.j</span><span class="xs mu">First game</span></div><span class="chip">Hider</span></div>
+<div class="li"><span class="av">SJ</span><div class="col grow"><span class="b7">@sana.j</span><span class="xs mu">First game</span></div><span class="chip">Runner</span></div>
 <div class="hr"></div>
 <div class="li"><span class="av">DN</span><div class="col grow"><span class="b7">@dev.n</span><span class="xs mu">Joined 1 min ago</span></div><a class="ib" href="#Report" aria-label="Remove or report @dev.n" style="border: 0"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></a></div>
 </div>
-<span class="xs mu" style="text-align: center">Tap a player to make them a seeker · 1 to 2 seekers</span>
+<span class="xs mu" style="text-align: center">Tap a player to make them a hunter · 1 to 2 hunters</span>
 </div>
 <div class="pad" style="padding-top: 12px; padding-bottom: 36px"><a class="btn btn-c" href="#Hider">Start · 5 min head start</a></div>
 </div>
@@ -421,7 +421,7 @@
 </div>
 </div>
 </section>
-<section class="screen" id="Hider" aria-label="Chase: hider view" hidden>
+<section class="screen" id="Hider" aria-label="Chase: runner view" hidden>
 <div class="scr dark">
 <div class="map" style="background-position: 85% 45%"></div>
 <div class="zone" style="left: -10px; top: 180px; width: 410px; height: 410px"></div>
@@ -433,12 +433,12 @@
 <div class="top col g8" style="align-items: stretch">
 <div class="hud">
 <div class="hudc col"><span class="lbl">Time left</span><span class="num" style="font-size: 42px">31:42</span></div>
-<a class="hudc col" href="#Ping" style="background: #FFB020; color: #0B1026"><span class="lbl" style="color: rgba(11,16,38,.7)">Next ping</span><span class="num" style="font-size: 42px">0:12</span></a>
+<a class="hudc col" href="#Ping" style="background: #FF2E7E; color: #101210"><span class="lbl" style="color: rgba(16,18,16,.7)">Next ping</span><span class="num" style="font-size: 42px">0:12</span></a>
 </div>
-<a class="hudc row g8" href="#Lock" style="flex: none; padding: 10px 14px"><span class="b9" style="color: #FFB020">!</span><span class="sm b7 grow">Zone shrinks in 1:00 · down to 420 m</span></a>
+<a class="hudc row g8" href="#Lock" style="flex: none; padding: 10px 14px"><span class="b9" style="color: #FF2E7E">!</span><span class="sm b7 grow">Zone shrinks in 1:00 · down to 420 m</span></a>
 </div>
 <div class="sheet col g12" style="padding-top: 16px">
-<div class="row between"><span class="chip chip-c">HIDER · 5 FREE</span><span class="chip">+4 pts so far</span></div>
+<div class="row between"><span class="chip chip-c">RUNNER · 5 FREE</span><span class="chip">+4 pts so far</span></div>
 <a class="btn btn-m" href="#Tagged" style="height: 76px; font-size: 22px; font-weight: 900; border-radius: 24px">I got tagged</a>
 <div class="seg"><span class="on">Map</span><a href="#Radio">Team chat</a><a href="#GameMenu">More</a></div>
 </div>
@@ -449,11 +449,11 @@
 <span class="ripple" style="left: 95px; top: 230px; width: 200px; height: 200px"></span>
 <span class="ripple d2" style="left: 95px; top: 230px; width: 200px; height: 200px"></span>
 <span class="ripple d3" style="left: 95px; top: 230px; width: 200px; height: 200px"></span>
-<span class="abs pop" style="left: 171px; top: 306px; width: 48px; height: 48px; border-radius: 50%; background: #0B1026"></span>
+<span class="abs pop" style="left: 171px; top: 306px; width: 48px; height: 48px; border-radius: 50%; background: #101210"></span>
 <div class="abs col g16" style="left: 24px; right: 24px; bottom: 56px">
 <span class="lbl">Pinged just now</span>
 <h1 class="d1 pop" style="font-size: 120px">PING!</h1>
-<p class="h2">Your location just went to the seekers. Move.</p>
+<p class="h2">Your location just went to the hunters. Move.</p>
 <div class="row between"><span class="sm b7">Next ping in 5:00</span><span class="sm b7">Tap to keep running</span></div>
 </div>
 </a>
@@ -466,9 +466,9 @@
 <span class="num" style="font-size: 92px; font-weight: 700">6:14</span>
 </div>
 <div class="col g8" style="padding: 40px 12px 0; position: relative">
-<a class="row g12 light" href="#Ping" style="background: #fff; color: #0B1026; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">now</span></div><span class="sm"><b>Ping!</b> Your location just went to the seekers. Move!</span></div></a>
-<a class="row g12 light" href="#OutZone" style="background: #fff; color: #0B1026; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">1m ago</span></div><span class="sm"><b>Zone shrinks in 1 min.</b> Head to the middle.</span></div></a>
-<a class="row g12 light" href="#RoundOver" style="background: rgba(255,255,255,.75); color: #0B1026; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">Yesterday</span></div><span class="sm"><b>Time’s up.</b> See who made it.</span></div></a>
+<a class="row g12 light" href="#Ping" style="background: #fff; color: #101210; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">now</span></div><span class="sm"><b>Ping!</b> Your location just went to the hunters. Move!</span></div></a>
+<a class="row g12 light" href="#OutZone" style="background: #fff; color: #101210; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">1m ago</span></div><span class="sm"><b>Zone shrinks in 1 min.</b> Head to the middle.</span></div></a>
+<a class="row g12 light" href="#RoundOver" style="background: rgba(255,255,255,.75); color: #101210; border-radius: 22px; padding: 14px; align-items: flex-start"><span class="crest cc" style="width: 38px; height: 38px; border-radius: 10px">r.</span><div class="col grow g4"><div class="row between"><span class="b7 sm">run.co</span><span class="xs mu">Yesterday</span></div><span class="sm"><b>Time’s up.</b> See who made it.</span></div></a>
 </div>
 <a class="abs sm b7" href="#Hider" style="left: 0; right: 0; bottom: 40px; text-align: center; padding: 12px">Swipe up to open the game</a>
 </div>
@@ -478,15 +478,15 @@
 <div class="map" style="background-position: 85% 45%"></div>
 <div class="zone" style="left: 85px; top: 300px; width: 240px; height: 240px"></div>
 <svg class="route" viewBox="0 0 390 844" aria-hidden="true"><path d="M74 600 L150 520" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 8" stroke-linecap="round"/></svg>
-<div class="me" style="left: 62px; top: 590px; background: #FFB020"></div>
-<div class="abs" style="inset: 0; border: 8px solid #FFB020; border-radius: 0; pointer-events: none"></div>
+<div class="me" style="left: 62px; top: 590px; background: #FF2E7E"></div>
+<div class="abs" style="inset: 0; border: 8px solid #FF2E7E; border-radius: 0; pointer-events: none"></div>
 <div class="abs col g12" style="left: 24px; right: 24px; top: 64px; align-items: center; text-align: center">
 <span class="chip chip-m">OUTSIDE THE ZONE</span>
 <div style="position: relative; width: 150px; height: 150px">
-<svg viewBox="0 0 110 110" style="width: 150px; height: 150px; transform: rotate(-90deg)" aria-hidden="true"><circle cx="55" cy="55" r="48" fill="#0B1026" stroke="rgba(255,255,255,.15)" stroke-width="8"/><circle cx="55" cy="55" r="48" fill="none" stroke="#FFB020" stroke-width="8" stroke-linecap="round" stroke-dasharray="302" stroke-dashoffset="70" style="animation: rc-count 30s linear forwards"/></svg>
-<span class="abs num" style="inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; color: #FFB020">23</span>
+<svg viewBox="0 0 110 110" style="width: 150px; height: 150px; transform: rotate(-90deg)" aria-hidden="true"><circle cx="55" cy="55" r="48" fill="#101210" stroke="rgba(255,255,255,.15)" stroke-width="8"/><circle cx="55" cy="55" r="48" fill="none" stroke="#FF2E7E" stroke-width="8" stroke-linecap="round" stroke-dasharray="302" stroke-dashoffset="70" style="animation: rc-count 30s linear forwards"/></svg>
+<span class="abs num" style="inset: 0; display: flex; align-items: center; justify-content: center; font-size: 64px; color: #FF2E7E">23</span>
 </div>
-<p class="h3">Seekers see you live in 23 s.<br><span class="mu" style="font-weight: 500">2 minutes out counts as tagged.</span></p>
+<p class="h3">Hunters see you live in 23 s.<br><span class="mu" style="font-weight: 500">2 minutes out counts as tagged.</span></p>
 </div>
 <div class="sheet col g12" style="padding-top: 18px">
 <div class="row g12"><svg class="ic cb" viewBox="0 0 24 24" style="transform: rotate(40deg)" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span class="b7 grow">Head north-east. Zone edge is 140 m.</span></div>
@@ -498,7 +498,7 @@
 <div class="scr">
 <div class="top"><a class="ib" href="#Hider" aria-label="Cancel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><span class="lbl">31:30 left</span><span style="width: 44px"></span></div>
 <div class="pad col g24" style="flex: 1; padding-top: 12px">
-<div class="col g12"><h1 class="d1">Got<br>tagged?</h1><p class="mu" style="font-size: 16px; line-height: 1.4">Only if a seeker actually tagged you. The whole game runs on this.</p></div>
+<div class="col g12"><h1 class="d1">Got<br>tagged?</h1><p class="mu" style="font-size: 16px; line-height: 1.4">Only if a hunter actually tagged you. The whole game runs on this.</p></div>
 <div class="col g12"><span class="lbl">Who got you?</span>
 <div class="row g16">
 <div class="col g8" style="align-items: center"><span class="ring m"><span class="av c" style="width: 68px; height: 68px; font-size: 20px">AK</span></span><span class="sm b7">@arjun.k</span></div>
@@ -512,7 +512,7 @@
 </div>
 </div>
 </section>
-<section class="screen" id="Seeker" aria-label="Chase: seeker view" hidden>
+<section class="screen" id="Seeker" aria-label="Chase: hunter view" hidden>
 <div class="scr dark">
 <div class="map" style="background-position: 85% 45%"></div>
 <div class="zone" style="left: 20px; top: 200px; width: 350px; height: 350px"></div>
@@ -525,12 +525,12 @@
 <div class="top col g8" style="align-items: stretch">
 <div class="hud">
 <div class="hudc col"><span class="lbl">Time left</span><span class="num" style="font-size: 42px">31:18</span></div>
-<div class="hudc col"><span class="lbl">Next ping</span><span class="num" style="font-size: 42px; color: #FFB020">4:32</span></div>
+<div class="hudc col"><span class="lbl">Next ping</span><span class="num" style="font-size: 42px; color: #FF2E7E">4:32</span></div>
 </div>
-<div class="hudc row between" style="flex: none; padding: 10px 14px"><span class="sm b7">Seekers · 2 tags · 4 hiding</span><span class="chip chip-m" style="height: 26px">+3 / TAG</span></div>
+<div class="hudc row between" style="flex: none; padding: 10px 14px"><span class="sm b7">Hunters · 2 tags · 4 hiding</span><span class="chip chip-m" style="height: 26px">+3 / TAG</span></div>
 </div>
 <div class="sheet col g12" style="padding-top: 16px">
-<div class="row between"><span class="chip chip-n">YOU’RE OUT · WATCHING SEEKERS</span></div>
+<div class="row between"><span class="chip chip-n">YOU’RE OUT · WATCHING HUNTERS</span></div>
 <div class="row between"><div class="col"><span class="lbl">Freshest ping</span><span class="h3">Dev · 120 m north of Arjun</span></div><span class="num" style="font-size: 30px">0:28</span></div>
 <div class="seg"><span class="on">Map</span><a href="#Radio">Team chat</a><a href="#GameMenu">More</a></div>
 </div>
@@ -538,15 +538,15 @@
 </section>
 <section class="screen" id="Radio" aria-label="Team chat" hidden>
 <div class="scr">
-<div class="top" style="background: #0B1026; color: #fff"><div class="col"><span class="h3">Hider chat</span><span class="xs" style="opacity: .7">Team only · seekers can’t see this</span></div><span class="chip chip-c">5 ON</span></div>
+<div class="top" style="background: #101210; color: #fff"><div class="col"><span class="h3">Runner chat</span><span class="xs" style="opacity: .7">Team only · hunters can’t see this</span></div><span class="chip chip-c">5 ON</span></div>
 <div class="body pad col g12" style="padding-top: 16px">
-<div class="row g8" style="align-items: flex-end"><span class="av s m">PR</span><div class="col g4"><span class="xs mu">@priya · 0:41</span><div class="card row g8" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; width: 220px"><svg class="ic cb" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg><span style="flex: 1; height: 18px; background: repeating-linear-gradient(90deg, #2B3BFF 0 3px, transparent 3px 6px); border-radius: 3px"></span><span class="xs mu">0:06</span></div></div></div>
+<div class="row g8" style="align-items: flex-end"><span class="av s m">PR</span><div class="col g4"><span class="xs mu">@priya · 0:41</span><div class="card row g8" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; width: 220px"><svg class="ic cb" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg><span style="flex: 1; height: 18px; background: repeating-linear-gradient(90deg, #C8FF1A 0 3px, transparent 3px 6px); border-radius: 3px"></span><span class="xs mu">0:06</span></div></div></div>
 <div class="row g8" style="align-items: flex-end"><span class="av s t">KR</span><div class="col g4"><span class="xs mu">@kabir.r</span><div class="card sm" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; max-width: 260px">Arjun just ran past Toit. Stay put behind 12th Main.</div></div></div>
-<div class="col g4" style="align-items: flex-end"><div class="sm" style="padding: 10px 14px; border-radius: 18px 18px 6px 18px; max-width: 260px; background: #2B3BFF; color: #fff; font-weight: 700">Ping in 30s. Everyone move after it lands.</div><span class="xs mu">Seen by 4</span></div>
+<div class="col g4" style="align-items: flex-end"><div class="sm" style="padding: 10px 14px; border-radius: 18px 18px 6px 18px; max-width: 260px; background: #C8FF1A; color: #101210; font-weight: 700">Ping in 30s. Everyone move after it lands.</div><span class="xs mu">Seen by 4</span></div>
 <div class="row g8" style="align-items: flex-end"><span class="av s">SJ</span><div class="col g4"><a class="xs mu" href="#Report">@sana.j · hold to report</a><div class="card sm" style="padding: 10px 14px; border-radius: 18px 18px 18px 6px; max-width: 260px">Zone is shrinking toward 100ft Road. Heading in.</div></div></div>
 </div>
-<div class="col g12" style="padding: 12px 20px 36px; align-items: center; background: #fff; border-top: 1px solid #E7E3DA">
-<button type="button" style="width: 120px; height: 120px; border-radius: 50%; background: #2B3BFF; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px" aria-label="Hold to talk"><svg class="ic" viewBox="0 0 24 24" style="width: 38px; height: 38px" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span class="xs b9" style="letter-spacing: .1em">HOLD TO TALK</span></button>
+<div class="col g12" style="padding: 12px 20px 36px; align-items: center; background: #fff; border-top: 1px solid #DFE1D6">
+<button type="button" style="width: 120px; height: 120px; border-radius: 50%; background: #C8FF1A; color: #101210; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px" aria-label="Hold to talk"><svg class="ic" viewBox="0 0 24 24" style="width: 38px; height: 38px" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span class="xs b9" style="letter-spacing: .1em">HOLD TO TALK</span></button>
 <div class="seg" style="width: 100%"><a href="#Hider">Map</a><span class="on">Team chat</span><a href="#GameMenu">More</a></div>
 </div>
 </div>
@@ -561,7 +561,7 @@
 <div class="row g8" style="flex-wrap: wrap"><span class="chip">Classic · 45 min</span><span class="chip">Ping 5 min</span><span class="chip">Zone 1.2 km → 400 m</span></div>
 <a class="opt" href="#Report" style="min-height: 60px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span class="b7 grow">Report or block a player</span></a>
 <a class="opt" href="#Home" style="min-height: 60px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg><div class="col grow"><span class="b7">Leave game</span><span class="xs mu">You can’t rejoin. Leaving early scores 0.</span></div></a>
-<a class="opt" href="#RoundOver" style="min-height: 60px; background: #0B1026; color: #fff"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg><div class="col grow"><span class="b7">End game for everyone</span><span class="xs" style="opacity: .7">Host only</span></div></a>
+<a class="opt" href="#RoundOver" style="min-height: 60px; background: #101210; color: #fff"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg><div class="col grow"><span class="b7">End game for everyone</span><span class="xs" style="opacity: .7">Host only</span></div></a>
 </div>
 </div>
 </section>
@@ -570,15 +570,15 @@
 <div class="top"><a class="ib" href="#Home" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><span class="lbl">Time’s up</span><span style="width: 44px"></span></div>
 <div class="body pad col g24">
 <div class="col g8 pop" style="padding-top: 8px">
-<span class="chip" style="align-self: flex-start; background: #FFB020; color: #0B1026">INDIRANAGAR NIGHT CHASE</span>
-<h1 class="d1" style="font-size: 84px">Hiders<br>win.</h1>
-<p class="h3" style="font-weight: 500; opacity: .85">3 of 5 never got caught. Seekers ran 14 km chasing ghosts.</p>
+<span class="chip" style="align-self: flex-start; background: #FF2E7E; color: #101210">INDIRANAGAR NIGHT CHASE</span>
+<h1 class="d1" style="font-size: 84px">Runners<br>win.</h1>
+<p class="h3" style="font-weight: 500; opacity: .85">3 of 5 never got caught. Hunters ran 14 km chasing ghosts.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-<div class="col g4 light" style="background: #fff; color: #0B1026; border-radius: 20px; padding: 16px"><span class="lbl">You ran</span><span class="num" style="font-size: 44px">5.8<span class="h3 mu"> km</span></span></div>
-<div class="col g4" style="background: #2EE59D; color: #0B1026; border-radius: 20px; padding: 16px"><span class="lbl" style="color: rgba(11,16,38,.7)">Points</span><span class="num" style="font-size: 44px">+17</span></div>
-<div class="col g4 light" style="background: #fff; color: #0B1026; border-radius: 20px; padding: 16px"><span class="lbl">Free for</span><span class="num" style="font-size: 44px">23:40</span></div>
-<div class="col g4 light" style="background: #fff; color: #0B1026; border-radius: 20px; padding: 16px"><span class="lbl">Pings dodged</span><span class="num" style="font-size: 44px">4</span></div>
+<div class="col g4 light" style="background: #fff; color: #101210; border-radius: 20px; padding: 16px"><span class="lbl">You ran</span><span class="num" style="font-size: 44px">5.8<span class="h3 mu"> km</span></span></div>
+<div class="col g4" style="background: #101210; color: #C8FF1A; border-radius: 20px; padding: 16px"><span class="lbl" style="color: rgba(255,255,255,.7)">Points</span><span class="num" style="font-size: 44px">+17</span></div>
+<div class="col g4 light" style="background: #fff; color: #101210; border-radius: 20px; padding: 16px"><span class="lbl">Free for</span><span class="num" style="font-size: 44px">23:40</span></div>
+<div class="col g4 light" style="background: #fff; color: #101210; border-radius: 20px; padding: 16px"><span class="lbl">Pings dodged</span><span class="num" style="font-size: 44px">4</span></div>
 </div>
 </div>
 <div class="pad col g8" style="padding-top: 12px; padding-bottom: 36px">
@@ -591,13 +591,13 @@
 <div class="scr">
 <div class="top"><a class="ib" href="#RoundOver" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="lbl">Story card</span><span style="width: 44px"></span></div>
 <div class="pad" style="flex: 1; display: flex; justify-content: center">
-<div style="width: 290px; height: 516px; border-radius: 28px; overflow: hidden; position: relative; background: #2B3BFF; color: #fff">
-<div style="position: absolute; left: 14px; right: 14px; top: 64px; height: 250px; border-radius: 20px; overflow: hidden"><div class="map" style="background-position: 85% 45%"></div><svg class="route" viewBox="0 0 262 250" aria-hidden="true"><path d="M40 210 C70 150 120 170 130 110 S210 70 210 30" fill="none" stroke="#FFB020" stroke-width="5" stroke-linecap="round"/><circle cx="210" cy="30" r="8" fill="#FFB020"/></svg></div>
-<span class="abs wordmark" style="left: 18px; top: 18px; font-size: 22px">run<span style="color: #FFB020">.</span>co</span>
+<div style="width: 290px; height: 516px; border-radius: 28px; overflow: hidden; position: relative; background: #C8FF1A; color: #101210">
+<div style="position: absolute; left: 14px; right: 14px; top: 64px; height: 250px; border-radius: 20px; overflow: hidden"><div class="map" style="background-position: 85% 45%"></div><svg class="route" viewBox="0 0 262 250" aria-hidden="true"><path d="M40 210 C70 150 120 170 130 110 S210 70 210 30" fill="none" stroke="#FF2E7E" stroke-width="5" stroke-linecap="round"/><circle cx="210" cy="30" r="8" fill="#FF2E7E"/></svg></div>
+<span class="abs wordmark" style="left: 18px; top: 18px; font-size: 22px">run<span style="color: #FF2E7E">.</span>co</span>
 <div class="abs col g8" style="left: 18px; right: 18px; bottom: 22px">
 <span class="lbl">Never caught on 100ft Road</span>
 <span class="num" style="font-size: 72px">23:40</span>
-<div class="row between sm b7"><span>5.8 km · hiders won</span><span>@meghna.runs</span></div>
+<div class="row between sm b7"><span>5.8 km · runners won</span><span>@meghna.runs</span></div>
 </div>
 </div>
 </div>
@@ -611,14 +611,14 @@
 <div class="scr">
 <div class="top"><a class="ib" href="#Club" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><a class="sm mu b7" href="#Settings" style="padding: 12px 0">Restore</a></div>
 <div class="body pad col g16">
-<div style="position: relative; height: 250px; border-radius: 24px; overflow: hidden; background: #0B1026"><div class="map"></div><img class="turfmap" src="assets/turf-v2.svg" alt="" style="object-position: 30% 22%"><span class="abs chip" style="left: 14px; top: 14px; background: #FFB020">CLUB PRO</span></div>
+<div style="position: relative; height: 250px; border-radius: 24px; overflow: hidden; background: #101210"><div class="map"></div><img class="turfmap" src="assets/turf-volt.svg" alt="" style="object-position: 30% 22%"><span class="abs chip" style="left: 14px; top: 14px; background: #FF2E7E">CLUB PRO</span></div>
 <h1 class="d1" style="font-size: 50px">Put your club<br>on the map.</h1>
 <div class="col">
 <div class="li"><svg class="ic cb" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/></svg><span class="grow b7">Every member’s run captures turf</span></div>
 <div class="li"><svg class="ic cb" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg><span class="grow b7">5-day reclaim window when rivals strike</span></div>
 <div class="li"><svg class="ic cb" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V10M12 20V4M18 20v-7"/></svg><span class="grow b7">Club ranks, season bonus, member stats</span></div>
 </div>
-<div class="row g12" style="background: #0B1026; color: #fff; border-radius: 20px; padding: 14px 16px"><span class="founder" style="background: #FFB020; color: #0B1026">FOUNDER</span><span class="sm grow">Unlock in the next 6d 14h and your crest keeps a Founder mark forever.</span></div>
+<div class="row g12" style="background: #101210; color: #fff; border-radius: 20px; padding: 14px 16px"><span class="founder" style="background: #FF2E7E; color: #101210">FOUNDER</span><span class="sm grow">Unlock in the next 6d 14h and your crest keeps a Founder mark forever.</span></div>
 </div>
 <div class="pad col g8" style="padding-top: 12px; padding-bottom: 36px">
 <a class="btn btn-c" href="#Turf">Get Club Pro · ₹2,999 once</a>
@@ -629,15 +629,15 @@
 <section class="screen" id="Turf" aria-label="Bengaluru Turf" hidden>
 <div class="scr dark">
 <div class="map"></div>
-<img class="turfmap" src="assets/turf-v2.svg" alt="Bengaluru hex map: Cubbon Crew in Cobalt, rivals in Mango, lost hexes striped">
+<img class="turfmap" src="assets/turf-volt.svg" alt="Bengaluru hex map: Cubbon Crew in Cobalt, rivals in Mango, lost hexes striped">
 <span class="abs crest cc" style="left: 104px; top: 246px; width: 34px; height: 34px; font-size: 11px; border: 2px solid #fff">CC</span>
-<span class="abs crest ch" style="left: 306px; top: 236px; width: 34px; height: 34px; font-size: 10px; border: 2px solid #0B1026">INR</span>
-<span class="abs crest ch" style="left: 60px; top: 650px; width: 34px; height: 34px; font-size: 11px; border: 2px solid #0B1026">HH</span>
+<span class="abs crest ch" style="left: 306px; top: 236px; width: 34px; height: 34px; font-size: 10px; border: 2px solid #101210">INR</span>
+<span class="abs crest ch" style="left: 60px; top: 650px; width: 34px; height: 34px; font-size: 11px; border: 2px solid #101210">HH</span>
 <div class="top col g8" style="align-items: flex-start">
 <div class="row between" style="width: 100%"><h1 class="h1">Turf</h1><span class="chip" style="background: rgba(255,255,255,.12); color: #fff">Season NOV · 22d left</span></div>
-<a class="chip" href="#Club" style="background: #2B3BFF; color: #fff; height: 38px; font-size: 14px">Your club owns 142 hexes</a>
+<a class="chip" href="#Club" style="background: #C8FF1A; color: #101210; height: 38px; font-size: 14px">Your club owns 142 hexes</a>
 </div>
-<div class="abs col g12 light" style="left: 12px; right: 12px; bottom: 98px; background: #fff; color: #0B1026; border-radius: 24px; padding: 16px">
+<div class="abs col g12 light" style="left: 12px; right: 12px; bottom: 98px; background: #fff; color: #101210; border-radius: 24px; padding: 16px">
 <div class="row between"><span class="b9">Under attack</span><span class="chip chip-m" style="height: 26px">2</span></div>
 <div class="row g12"><span class="stripe" style="width: 28px; height: 28px; border-radius: 8px; flex: none"></span><div class="col grow"><span class="b7 sm">6 hexes · Koramangala 5th Block</span><span class="xs mu">Taken by HSR Hustlers</span></div><span class="b9 mg sm">4d 12h</span></div>
 <div class="row g12"><span class="stripe" style="width: 28px; height: 28px; border-radius: 8px; flex: none"></span><div class="col grow"><span class="b7 sm">2 hexes · Ulsoor Lake</span><span class="xs mu">Taken by Indiranagar Night Runners</span></div><span class="b9 mg sm">1d 3h</span></div>
@@ -656,24 +656,24 @@
 <div class="scr dark">
 <div class="map" style="background-position: 60% 70%"></div>
 <svg class="route" viewBox="0 0 390 844" aria-hidden="true">
-<g stroke="#0B1026" stroke-width="2.5">
-<path transform="translate(112 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
-<path transform="translate(157 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
-<path class="flip" transform="translate(180 521)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
-<path class="flip d1" transform="translate(225 482)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
-<path class="flip d2" transform="translate(248 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2EE59D"/>
-<path class="flip d3" transform="translate(293 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2EE59D"/>
+<g stroke="#101210" stroke-width="2.5">
+<path transform="translate(112 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
+<path transform="translate(157 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
+<path class="flip" transform="translate(180 521)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
+<path class="flip d1" transform="translate(225 482)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
+<path class="flip d2" transform="translate(248 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
+<path class="flip d3" transform="translate(293 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#C8FF1A"/>
 <path transform="translate(270 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="url(#lost)"/>
 <path transform="translate(315 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="url(#lost)"/>
-<path transform="translate(225 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#FFB020" fill-opacity=".7"/>
+<path transform="translate(225 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#FF2E7E" fill-opacity=".7"/>
 </g>
-<defs><pattern id="lost" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#2B3BFF"/><rect width="4" height="8" fill="#FFB020"/></pattern></defs>
+<defs><pattern id="lost" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#C8FF1A"/><rect width="4" height="8" fill="#FF2E7E"/></pattern></defs>
 <path class="draw" d="M80 600 C110 570 150 560 175 525 S220 480 250 445 S300 430 300 440" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
 </svg>
 <div class="me" style="left: 288px; top: 428px"></div>
 <div class="top col g8" style="align-items: stretch">
 <div class="hudc row between" style="padding: 14px 16px"><div class="col"><span class="lbl">Distance</span><span class="num" style="font-size: 52px">4.62<span class="h3" style="opacity: .7"> km</span></span></div><div class="col" style="text-align: right; gap: 6px"><span class="b9" style="font-size: 20px">5:38 /km</span><span class="b9" style="font-size: 20px">26:04</span></div></div>
-<div class="row g8"><span class="chip chip-c" style="background: #2B3BFF; color: #fff">+9 HEXES</span><span class="chip" style="background: #2EE59D">RECLAIMING 2 OF 6</span></div>
+<div class="row g8"><span class="chip chip-c" style="background: #C8FF1A; color: #101210">+9 HEXES</span><span class="chip" style="background: #C8FF1A">RECLAIMING 2 OF 6</span></div>
 </div>
 <div class="sheet col g12" style="padding-top: 16px">
 <span class="sm mu" style="text-align: center">Cubbon Crew club run · grab 1 new hex to lock in the reclaim</span>
@@ -683,13 +683,13 @@
 </section>
 <section class="screen" id="RunSummary" aria-label="Run summary" hidden>
 <div class="scr">
-<div style="background: #2B3BFF; color: #fff; padding: 58px 20px 24px; flex: none" class="col g16">
-<div class="row between"><a class="ib" href="#Home" aria-label="Close" style="background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.25); color: #fff"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><span class="xs b7" style="opacity: .8">CLUB RUN · CUBBON CREW</span><span style="width: 44px"></span></div>
+<div style="background: #C8FF1A; color: #101210; padding: 58px 20px 24px; flex: none" class="col g16">
+<div class="row between"><a class="ib" href="#Home" aria-label="Close" style="background: rgba(16,18,16,.08); border-color: rgba(16,18,16,.16); color: #101210"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a><span class="xs b7" style="opacity: .8">CLUB RUN · CUBBON CREW</span><span style="width: 44px"></span></div>
 <div class="col g4 pop"><span class="xs b9" style="letter-spacing: .1em; opacity: .8">TURF CAPTURED</span><span class="num" style="font-size: 96px">+14</span><span class="h3">hexes for Cubbon Crew</span></div>
 </div>
 <div class="body pad col g12" style="padding-top: 16px">
-<div class="row g12" style="background: #2EE59D; border-radius: 20px; padding: 14px 16px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span class="b7 grow">6 hexes reclaimed from HSR Hustlers</span><span class="b9">+12</span></div>
-<div style="position: relative; height: 200px; border-radius: 20px; overflow: hidden; background: #0B1026"><div class="map" style="background-position: 60% 70%"></div><svg class="route" viewBox="0 0 350 200" aria-hidden="true"><path d="M30 170 C70 140 110 150 140 110 S210 60 240 50 S300 40 320 60" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></svg></div>
+<div class="row g12" style="background: #C8FF1A; border-radius: 20px; padding: 14px 16px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span class="b7 grow">6 hexes reclaimed from HSR Hustlers</span><span class="b9">+12</span></div>
+<div style="position: relative; height: 200px; border-radius: 20px; overflow: hidden; background: #101210"><div class="map" style="background-position: 60% 70%"></div><svg class="route" viewBox="0 0 350 200" aria-hidden="true"><path d="M30 170 C70 140 110 150 140 110 S210 60 240 50 S300 40 320 60" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></svg></div>
 <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
 <div class="card col g4" style="padding: 12px"><span class="num" style="font-size: 24px">8.21</span><span class="xs mu">km</span></div>
 <div class="card col g4" style="padding: 12px"><span class="num" style="font-size: 24px">5:41</span><span class="xs mu">/km</span></div>
@@ -727,7 +727,7 @@
 <div class="row between"><div class="row g8"><span class="chip on">My city</span><span class="chip">India</span><span class="chip">World</span></div><span class="xs mu">6 h delay</span></div>
 </div>
 <div class="body pad" style="padding-top: 10px">
-<div class="row g12" style="background: #2B3BFF; color: #fff; border-radius: 20px; padding: 14px 16px; margin-bottom: 8px"><span class="num" style="font-size: 28px; width: 26px">1</span><span class="av m">PR</span><div class="col grow"><span class="b7">@priya <span class="founder" style="background: #fff; color: #2B3BFF">F</span></span><span class="xs" style="opacity: .8">41 rounds · 29 wins · 212 km</span></div><span class="num" style="font-size: 26px">688</span></div>
+<div class="row g12" style="background: #C8FF1A; color: #101210; border-radius: 20px; padding: 14px 16px; margin-bottom: 8px"><span class="num" style="font-size: 28px; width: 26px">1</span><span class="av m">PR</span><div class="col grow"><span class="b7">@priya <span class="founder" style="background: #101210; color: #C8FF1A">F</span></span><span class="xs" style="opacity: .8">41 rounds · 29 wins · 212 km</span></div><span class="num" style="font-size: 26px">688</span></div>
 <div class="li"><span class="num" style="width: 26px; font-size: 22px">2</span><span class="av c">AK</span><div class="col grow"><span class="b7">@arjun.k</span><span class="xs mu">38 rounds · 22 wins · 241 km</span></div><span class="num" style="font-size: 22px">651</span></div>
 <div class="hr"></div>
 <div class="li"><span class="num" style="width: 26px; font-size: 22px">3</span><span class="av t">KR</span><div class="col grow"><span class="b7">@kabir.r <span class="founder">F</span></span><span class="xs mu">40 rounds · 25 wins · 198 km</span></div><span class="num" style="font-size: 22px">597</span></div>
@@ -738,7 +738,7 @@
 <div class="hr"></div>
 <div class="li"><span class="num mu" style="width: 26px; font-size: 22px">6</span><span class="av">SJ</span><div class="col grow"><span class="b7">@sana.j</span><span class="xs mu">30 rounds · 19 wins · 140 km</span></div><span class="num" style="font-size: 22px">471</span></div>
 </div>
-<a class="row g12" href="#Profile" style="margin: 0 12px 10px; padding: 10px 14px; border-radius: 18px; background: #0B1026; color: #fff"><span class="num" style="width: 40px; font-size: 20px; color: #FFB020">#18</span><span class="av l s">MR</span><div class="col grow"><span class="b7 sm">You · @meghna.runs</span><span class="xs" style="opacity: .7">64 rounds · 38 wins · 212 km</span></div><span class="num" style="font-size: 20px">312</span></a>
+<a class="row g12" href="#Profile" style="margin: 0 12px 10px; padding: 10px 14px; border-radius: 18px; background: #101210; color: #fff"><span class="num" style="width: 40px; font-size: 20px; color: #FF2E7E">#18</span><span class="av l s">MR</span><div class="col grow"><span class="b7 sm">You · @meghna.runs</span><span class="xs" style="opacity: .7">64 rounds · 38 wins · 212 km</span></div><span class="num" style="font-size: 20px">312</span></a>
 <nav class="tabbar" aria-label="Main">
 <a class="tab" href="#Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
 <a class="tab" href="#Turf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7z"/></svg>Turf</a>
@@ -756,7 +756,7 @@
 <div class="row between"><div class="row g8"><span class="chip on">My city</span><span class="chip">India</span><span class="chip">World</span></div><span class="xs mu">6 h delay</span></div>
 </div>
 <div class="body pad col g8" style="padding-top: 10px">
-<a class="row g12" href="#Club" style="background: #2B3BFF; color: #fff; border-radius: 20px; padding: 14px 16px"><span class="num" style="font-size: 28px; width: 26px">1</span><span class="crest" style="background: #fff; color: #2B3BFF">CC</span><div class="col grow"><span class="b7">Cubbon Crew</span><span class="xs" style="opacity: .8">412 members · 142 hexes · 1,840 km</span></div><span class="num" style="font-size: 24px">2,840</span></a>
+<a class="row g12" href="#Club" style="background: #C8FF1A; color: #101210; border-radius: 20px; padding: 14px 16px"><span class="num" style="font-size: 28px; width: 26px">1</span><span class="crest" style="background: #101210; color: #C8FF1A">CC</span><div class="col grow"><span class="b7">Cubbon Crew</span><span class="xs" style="opacity: .8">412 members · 142 hexes · 1,840 km</span></div><span class="num" style="font-size: 24px">2,840</span></a>
 <a class="card row g12" href="#Club"><span class="num" style="font-size: 24px; width: 26px">2</span><span class="crest ch">HH</span><div class="col grow"><span class="b7">HSR Hustlers</span><span class="xs mu">288 members · 121 hexes · 1,510 km</span></div><span class="num" style="font-size: 22px">2,610</span></a>
 <a class="card row g12" href="#Club"><span class="num" style="font-size: 24px; width: 26px">3</span><span class="crest cn" style="font-size: 11px">INR</span><div class="col grow"><span class="b7">Indiranagar Night Runners</span><span class="xs mu">196 members · 98 hexes · 1,120 km</span></div><span class="num" style="font-size: 22px">1,980</span></a>
 <div class="card2 col g4" style="margin-top: 8px"><span class="b7">Season bonus</span><span class="sm mu">The club holding the most hexes on 30 Nov takes a +500 bonus for every member.</span></div>
@@ -794,36 +794,36 @@
 <section class="screen" id="Profile" aria-label="Profile dashboard" hidden>
 <div class="scr">
 <div class="body">
-<div class="cobalt col g16" style="background: #2B3BFF; color: #fff; padding: 58px 20px 22px; border-radius: 0 0 32px 32px">
+<div class="cobalt col g16" style="background: #C8FF1A; color: #101210; padding: 58px 20px 22px; border-radius: 0 0 32px 32px">
 <div class="row between"><span class="h3">meghna.runs</span><a class="ib" href="#Settings" aria-label="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></a></div>
 <div class="row g16">
-<span style="padding: 4px; border-radius: 50%; border: 3px solid #FFB020; display: flex"><span class="av lg" style="background: #fff; color: #2B3BFF">MR</span></span>
+<span style="padding: 4px; border-radius: 50%; border: 3px solid #FF2E7E; display: flex"><span class="av lg" style="background: #101210; color: #C8FF1A">MR</span></span>
 <div class="col g8 grow">
 <span class="h3">@meghna.runs</span>
-<div class="row g8"><a class="row g4 sm b7" href="#Club"><span class="crest" style="width: 22px; height: 22px; border-radius: 6px; font-size: 8px; background: #fff; color: #2B3BFF">CC</span>Cubbon Crew</a><span class="founder">FOUNDER</span></div>
+<div class="row g8"><a class="row g4 sm b7" href="#Club"><span class="crest" style="width: 22px; height: 22px; border-radius: 6px; font-size: 8px; background: #101210; color: #C8FF1A">CC</span>Cubbon Crew</a><span class="founder">FOUNDER</span></div>
 <a class="btn btn-w btn-sm" href="#Profile" style="width: 100%">Follow</a>
 </div>
 </div>
 <div class="col g8" style="padding-top: 6px">
 <span class="lbl">Total km run</span>
 <span class="num" style="font-size: 92px">212.4</span>
-<div class="bar3"><span style="flex: 128; background: #fff"></span><span style="flex: 46; background: #FFB020"></span><span style="flex: 38; background: #2EE59D"></span></div>
-<div class="row between xs b7"><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #fff"></i>Club runs 128</span><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #FFB020"></i>Solo 46</span><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #2EE59D"></i>Chase 38</span></div>
+<div class="bar3"><span style="flex: 128; background: #fff"></span><span style="flex: 46; background: #FF2E7E"></span><span style="flex: 38; background: #101210"></span></div>
+<div class="row between xs b7"><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #fff"></i>Club runs 128</span><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #FF2E7E"></i>Solo 46</span><span class="row g4"><i style="width: 8px; height: 8px; border-radius: 2px; background: #101210"></i>Chase 38</span></div>
 </div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.25); padding-top: 14px">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(16,18,16,.18); padding-top: 14px">
 <div class="col g4"><span class="num" style="font-size: 24px">312</span><span class="xs mu">season pts</span></div>
-<a class="col g4" href="#Ranks" style="border-left: 1px solid rgba(255,255,255,.25); padding-left: 12px"><span class="num" style="font-size: 24px; color: #FFB020">#18</span><span class="xs mu">in BLR</span></a>
-<div class="col g4" style="border-left: 1px solid rgba(255,255,255,.25); padding-left: 12px"><span class="num" style="font-size: 24px">64</span><span class="xs mu">rounds</span></div>
-<div class="col g4" style="border-left: 1px solid rgba(255,255,255,.25); padding-left: 12px"><span class="num" style="font-size: 24px">87</span><span class="xs mu">hexes</span></div>
+<a class="col g4" href="#Ranks" style="border-left: 1px solid rgba(16,18,16,.18); padding-left: 12px"><span class="num" style="font-size: 24px">#18</span><span class="xs mu">in BLR</span></a>
+<div class="col g4" style="border-left: 1px solid rgba(16,18,16,.18); padding-left: 12px"><span class="num" style="font-size: 24px">64</span><span class="xs mu">rounds</span></div>
+<div class="col g4" style="border-left: 1px solid rgba(16,18,16,.18); padding-left: 12px"><span class="num" style="font-size: 24px">87</span><span class="xs mu">hexes</span></div>
 </div>
 </div>
 <div class="pad" style="padding-top: 16px"><div class="seg"><span class="on">Activity</span><a href="#Badges">Badges</a></div></div>
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding: 12px 0 24px">
-<a href="#RunSummary" style="aspect-ratio: 1; background: #2B3BFF; color: #fff; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">+14</span><span class="xs b7">hexes · Sat</span></a>
+<a href="#RunSummary" style="aspect-ratio: 1; background: #C8FF1A; color: #101210; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">+14</span><span class="xs b7">hexes · Sat</span></a>
 <a href="#RoundOver" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 80% 40%"></div><span class="abs chip chip-t" style="left: 6px; bottom: 6px; height: 22px; font-size: 10px">NEVER CAUGHT</span></a>
 <a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 60% 70%"></div><svg class="route" viewBox="0 0 100 100" aria-hidden="true"><path d="M15 20 C40 50 60 30 85 85" fill="none" stroke="#fff" stroke-width="3"/></svg><span class="abs xs b9" style="left: 6px; bottom: 6px; color: #fff">8.2 km</span></a>
-<a href="#RoundOver" style="aspect-ratio: 1; background: #FFB020; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">5 tags</span><span class="xs b7">as seeker</span></a>
-<a href="#RunSummary" style="aspect-ratio: 1; background: #2EE59D; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">6</span><span class="xs b7">reclaimed</span></a>
+<a href="#RoundOver" style="aspect-ratio: 1; background: #FF2E7E; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">5 tags</span><span class="xs b7">as hunter</span></a>
+<a href="#RunSummary" style="aspect-ratio: 1; background: #C8FF1A; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end"><span class="num" style="font-size: 26px">6</span><span class="xs b7">reclaimed</span></a>
 <a href="#RunSummary" style="position: relative; aspect-ratio: 1; overflow: hidden"><div class="map" style="background-position: 20% 80%"></div><svg class="route" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 85 C30 40 70 60 80 15" fill="none" stroke="#fff" stroke-width="3"/></svg><span class="abs xs b9" style="left: 6px; bottom: 6px; color: #fff">7.2 km</span></a>
 </div>
 </div>
@@ -842,10 +842,10 @@
 <div class="body pad col g16" style="padding-bottom: 24px">
 <div class="seg"><a href="#Profile">Activity</a><span class="on">Badges</span></div>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-<div class="col g8" style="background: #0B1026; color: #fff; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="founder" style="align-self: flex-start">FOUNDER</span><span class="b9">Founder</span><span class="xs" style="opacity: .7">Unlocked in the launch window</span></div>
-<div class="col g8" style="background: #2EE59D; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">×9</span><span class="b9">Ghost</span><span class="xs">Never caught in a round</span></div>
-<div class="col g8" style="background: #2B3BFF; color: #fff; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">87</span><span class="b9">Turf maker</span><span class="xs" style="opacity: .8">Hexes captured</span></div>
-<div class="col g8" style="background: #FFB020; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">×2</span><span class="b9">Clean sweep</span><span class="xs">Caught every hider</span></div>
+<div class="col g8" style="background: #101210; color: #fff; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="founder" style="align-self: flex-start">FOUNDER</span><span class="b9">Founder</span><span class="xs" style="opacity: .7">Unlocked in the launch window</span></div>
+<div class="col g8" style="background: #C8FF1A; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">×9</span><span class="b9">Ghost</span><span class="xs">Never caught in a round</span></div>
+<div class="col g8" style="background: #C8FF1A; color: #101210; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">87</span><span class="b9">Turf maker</span><span class="xs" style="opacity: .8">Hexes captured</span></div>
+<div class="col g8" style="background: #FF2E7E; border-radius: 20px; padding: 16px; min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">×2</span><span class="b9">Clean sweep</span><span class="xs">Caught every runner</span></div>
 <div class="col g8 card" style="min-height: 140px; justify-content: flex-end"><span class="num" style="font-size: 34px">100</span><span class="b9">Century</span><span class="xs mu">100 km in a season</span></div>
 <div class="col g8 card" style="min-height: 140px; justify-content: flex-end; opacity: .5"><span class="num" style="font-size: 34px">?</span><span class="b9">Comeback</span><span class="xs mu">Reclaim 20 hexes in one run</span></div>
 </div>
