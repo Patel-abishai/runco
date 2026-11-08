@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>In-game menu</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr">
+<div class="map" style="background-position: 85% 45%"></div>
+<a class="scrim" href="Hunter.dc.html" aria-label="Close"></a>
+<div class="sheet col g12 rise">
+<div class="grab"></div>
+<div class="row between"><h2 class="h2">Round menu</h2><span class="sm mu">31:12 left</span></div>
+<div class="card2 col g8"><span class="lbl">Rules this round</span><div class="row g8" style="flex-wrap: wrap"><span class="chip">Infection</span><span class="chip">Ping 5 min</span><span class="chip">Zone 1.2 km → 400 m</span><span class="chip">45 min</span></div></div>
+<a class="opt" href="Report.dc.html" style="min-height: 60px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span class="b7 grow">Report or block a player</span></a>
+<a class="opt" href="Home.dc.html" style="min-height: 60px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg><div class="col grow"><span class="b7">Leave round</span><span class="xs mu">You can’t rejoin. Leaving early scores 0.</span></div></a>
+<a class="opt" href="RoundOver.dc.html" style="min-height: 60px; border: 1px solid #FF4D2E"><svg class="ic hot" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg><div class="col grow"><span class="b7 hot">End round for everyone</span><span class="xs mu">Host only · points count if 5+ min played</span></div></a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

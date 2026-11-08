@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Host Chase setup</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr">
+<div style="position: absolute; left: 0; right: 0; top: 0; height: 380px"><div class="map" style="background-position: 70% 35%"></div>
+<div class="zone" style="left: 75px; top: 110px; width: 240px; height: 240px"></div>
+<div class="zone-next" style="left: 150px; top: 185px; width: 90px; height: 90px"></div>
+<div class="handle" style="left: 304px; top: 219px"></div>
+<div class="handle" style="left: 184px; top: 99px"></div>
+<span class="abs chip" style="left: 150px; top: 222px; background: rgba(14,14,16,.85)">1.2 km</span>
+<span class="abs xs mu b7" style="left: 108px; top: 360px">Drag the handles to resize</span>
+</div>
+<div class="shade-top" style="height: 140px"></div>
+<div class="top"><a class="ib" href="PlaySheet.dc.html" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="h3">Host Chase</span><span class="founder">FOUNDER</span></div>
+<div class="sheet col g16" style="top: 380px; padding-top: 20px; overflow-y: auto; scrollbar-width: none">
+<div class="seg"><span class="on">Classic</span><span>Infection</span></div>
+<div class="sl"><div class="row between"><span class="b7">Round length</span><span class="b9 lime">45 min</span></div><div class="sl-track"><div class="sl-fill" style="width: 22%"></div><div class="sl-thumb" style="left: 22%"></div></div></div>
+<div class="sl"><div class="row between"><span class="b7">Ping every</span><span class="b9 lime">5 min</span></div><div class="sl-track"><div class="sl-fill" style="width: 14%"></div><div class="sl-thumb" style="left: 14%"></div></div></div>
+<div class="sl"><div class="row between"><span class="b7">Head start</span><span class="b9 lime">5 min</span></div><div class="sl-track"><div class="sl-fill" style="width: 17%"></div><div class="sl-thumb" style="left: 17%"></div></div></div>
+<div class="row between"><div class="col"><span class="b7">Shrinking zone</span><span class="xs mu">Every 10 min, down to 400 m</span></div><span class="sw on" role="img" aria-label="On"></span></div>
+<a class="btn btn-lime" href="Invite.dc.html" style="flex: none">Create game</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

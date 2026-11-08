@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Raid: capturing the flag</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr">
+<div class="map" style="background-position: 25% 35%"></div>
+<div class="base l" style="left: 30px; top: 560px; width: 120px; height: 120px"><span class="flag" style="background: #C6FF3D"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span></div>
+<div class="base h" style="left: 200px; top: 230px; width: 150px; height: 150px; box-shadow: 0 0 40px rgba(255,77,46,.35)"><span class="flag" style="background: #FF4D2E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span></div>
+<div class="me" style="left: 250px; top: 330px"></div>
+<div class="mate" style="left: 140px; top: 420px"><b></b><span>PRIYA</span></div>
+<div class="mate h" style="left: 310px; top: 210px"><b></b><span class="hot">HH · ROHAN</span></div>
+<div class="shade-top" style="height: 200px"></div>
+<div class="shade-bot" style="height: 380px"></div>
+<div class="top" style="padding-bottom: 0">
+<div class="hudc row between" style="padding: 10px 12px">
+<div class="row g8"><span class="crest cc" style="width: 34px; height: 34px; font-size: 11px">CC</span><span class="num" style="font-size: 34px">1</span></div>
+<div class="col" style="align-items: center"><span class="num" style="font-size: 22px">24:10</span><span class="xs mu">First to 3</span></div>
+<div class="row g8"><span class="num" style="font-size: 34px">1</span><span class="crest ch" style="width: 34px; height: 34px; font-size: 11px">HH</span></div>
+</div>
+</div>
+<div class="abs col g16" style="left: 20px; right: 20px; bottom: 36px; align-items: center">
+<a href="RaidCarry.dc.html" style="position: relative; width: 168px; height: 168px; display: block" aria-label="Hold timer, 7 seconds">
+<svg viewBox="0 0 110 110" style="width: 168px; height: 168px; transform: rotate(-90deg)" aria-hidden="true"><circle cx="55" cy="55" r="48" fill="rgba(14,14,16,.9)" stroke="#2C2C33" stroke-width="8"/><circle cx="55" cy="55" r="48" fill="none" stroke="#C6FF3D" stroke-width="8" stroke-linecap="round" stroke-dasharray="302" stroke-dashoffset="302" style="animation: rc-hold 10s linear forwards"/></svg>
+<span class="abs col" style="inset: 0; align-items: center; justify-content: center"><span class="num lime" style="font-size: 60px">7</span><span class="xs b9" style="letter-spacing: .1em">HOLD</span></span>
+</a>
+<p class="h3" style="text-align: center">You’re on their flag. Stay inside 30 m.</p>
+<span class="chip chip-hot">2 DEFENDERS WITHIN 80 m</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

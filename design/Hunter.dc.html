@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chase: hunter view</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr">
+<div class="map" style="background-position: 85% 45%"></div>
+<div class="zone" style="left: 20px; top: 210px; width: 350px; height: 350px; border-color: rgba(244,243,238,.4); background: rgba(244,243,238,.03)"></div>
+<div class="pin" style="left: 90px; top: 290px"><b></b><span>PRIYA 0:28 AGO</span></div>
+<div class="pin" style="left: 250px; top: 440px"><b></b><span>KABIR 0:28 AGO</span></div>
+<div class="pin old" style="left: 70px; top: 470px"><b></b><span>SANA 5:28 AGO</span></div>
+<div class="pin" style="left: 200px; top: 250px"><b></b><span>DEV 0:28 AGO</span></div>
+<div class="me" style="left: 180px; top: 380px"></div>
+<div class="mate" style="left: 260px; top: 330px"><b></b><span>ARJUN</span></div>
+<div class="mate" style="left: 110px; top: 400px"><b></b><span>ROHIT</span></div>
+<div class="shade-top" style="height: 220px"></div>
+<div class="shade-bot" style="height: 280px"></div>
+<div class="top col g8" style="align-items: stretch">
+<div class="hud">
+<div class="hudc col"><span class="lbl">Time left</span><span class="num" style="font-size: 40px">31:18</span></div>
+<div class="hudc col"><span class="lbl">Next ping</span><span class="num lime" style="font-size: 40px">4:32</span></div>
+</div>
+<div class="hud"><div class="hudc row between" style="padding: 8px 12px"><span class="sm b7">You switched to Hunters</span><span class="chip chip-lime" style="height: 26px">INFECTION</span></div></div>
+</div>
+<div class="abs col g12" style="left: 20px; right: 20px; bottom: 36px">
+<div class="row between"><span class="chip chip-lime">HUNTERS · 3</span><span class="chip chip-hot">RUNNERS LEFT · 5</span></div>
+<div class="card row between" style="background: rgba(23,23,27,.95)"><div class="col"><span class="lbl">Closest last ping</span><span class="h3">Dev · 120 m north</span></div><span class="num lime" style="font-size: 30px">+3<span class="sm mu"> /tag</span></span></div>
+<div class="seg"><span class="on">Map</span><a href="Radio.dc.html">Radio</a><a href="GameMenu.dc.html" aria-label="More">•••</a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr">
+<div class="top"><a class="ib" href="Onboard3.dc.html" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a><span class="wordmark" style="font-size: 22px">run<i>.</i>co</span><span style="width: 44px"></span></div>
+<div class="pad col g24" style="flex: 1; padding-top: 24px">
+<div class="col g12">
+<h1 class="h1">Lace up.<br>Sign in.</h1>
+<p class="mu" style="font-size: 16px; line-height: 1.4">No passwords. We send a 6-digit code to your inbox.</p>
+</div>
+<div class="col g8">
+<label class="lbl" for="em">Email</label>
+<input id="em" class="field" type="email" placeholder="you@gmail.com" value="meghna.runs@gmail.com">
+</div>
+<div class="col g8">
+<span class="lbl">Code sent · check your inbox</span>
+<div class="code"><b class="on">4</b><b class="on">8</b><b class="on">1</b><b class="on">9</b><b>2</b><b></b></div>
+<span class="xs mu">Resend in 0:24</span>
+</div>
+<a class="btn btn-lime" href="Permissions.dc.html">Continue</a>
+<div class="row g12"><span class="hr grow"></span><span class="xs mu b7">OR</span><span class="hr grow"></span></div>
+<a class="btn" href="Permissions.dc.html"><span class="b9" style="width: 24px; height: 24px; border-radius: 50%; background: #F4F3EE; color: #0E0E10; display: flex; align-items: center; justify-content: center; font-size: 14px">G</span>Continue with Google</a>
+</div>
+<p class="pad xs mu" style="padding-bottom: 40px; text-align: center; line-height: 1.5">By continuing you agree to play fair, look up at crossings and respect the people you tag.</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>
