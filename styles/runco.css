@@ -28,6 +28,7 @@ body{margin:0;background:var(--paper)}
 .dark .mg,.onnight .mg{color:var(--mango)}
 .mt{color:#0A7A50}
 .scr .sheet .mu,.scr .sheet .lbl,.scr .light .mu,.scr .light .lbl{color:var(--mu)}
+.scr .light .mg,.scr .sheet .mg{color:#B26F00}
 .b7{font-weight:700}.b9{font-weight:900}
 /* layout */
 .top{padding:58px 20px 12px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;position:relative;z-index:5}
