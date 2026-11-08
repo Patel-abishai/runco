@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Club run in progress</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr dark">
+<div class="map" style="background-position: 60% 70%"></div>
+<svg class="route" viewBox="0 0 390 844" aria-hidden="true">
+<g stroke="#0B1026" stroke-width="2.5">
+<path transform="translate(112 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
+<path transform="translate(157 560)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
+<path class="flip" transform="translate(180 521)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
+<path class="flip d1" transform="translate(225 482)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2B3BFF"/>
+<path class="flip d2" transform="translate(248 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2EE59D"/>
+<path class="flip d3" transform="translate(293 443)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#2EE59D"/>
+<path transform="translate(270 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="url(#lost)"/>
+<path transform="translate(315 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="url(#lost)"/>
+<path transform="translate(225 404)" d="M0 -26L22.5 -13V13L0 26L-22.5 13V-13Z" fill="#FFB020" fill-opacity=".7"/>
+</g>
+<defs><pattern id="lost" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#2B3BFF"/><rect width="4" height="8" fill="#FFB020"/></pattern></defs>
+<path class="draw" d="M80 600 C110 570 150 560 175 525 S220 480 250 445 S300 430 300 440" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+</svg>
+<div class="me" style="left: 288px; top: 428px"></div>
+<div class="top col g8" style="align-items: stretch">
+<div class="hudc row between" style="padding: 14px 16px"><div class="col"><span class="lbl">Distance</span><span class="num" style="font-size: 52px">4.62<span class="h3" style="opacity: .7"> km</span></span></div><div class="col" style="text-align: right; gap: 6px"><span class="b9" style="font-size: 20px">5:38 /km</span><span class="b9" style="font-size: 20px">26:04</span></div></div>
+<div class="row g8"><span class="chip chip-c" style="background: #2B3BFF; color: #fff">+9 HEXES</span><span class="chip" style="background: #2EE59D">RECLAIMING 2 OF 6</span></div>
+</div>
+<div class="sheet col g12" style="padding-top: 16px">
+<span class="sm mu" style="text-align: center">Cubbon Crew club run · grab 1 new hex to lock in the reclaim</span>
+<div class="row g8"><a class="btn grow" href="ClubRun.dc.html" style="height: 68px; font-size: 18px">Pause</a><a class="btn btn-c grow" href="RunSummary.dc.html" style="height: 68px; font-size: 18px">Finish</a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

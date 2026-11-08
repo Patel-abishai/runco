@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Solo run</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr dark">
+<div class="map" style="background-position: 30% 30%"></div>
+<svg class="route" viewBox="0 0 390 844" aria-hidden="true"><path class="draw" d="M90 620 C120 560 100 500 160 460 S260 420 250 340" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/></svg>
+<div class="me" style="left: 238px; top: 328px"></div>
+<div class="top col g8" style="align-items: stretch">
+<div class="hudc row between" style="padding: 14px 16px"><div class="col"><span class="lbl">Distance</span><span class="num" style="font-size: 52px">3.08<span class="h3" style="opacity: .7"> km</span></span></div><div class="col" style="text-align: right; gap: 6px"><span class="b9" style="font-size: 20px">6:02 /km</span><span class="b9" style="font-size: 20px">18:35</span></div></div>
+<span class="chip" style="align-self: flex-start; background: #fff">SOLO · STATS ONLY, NO TURF</span>
+</div>
+<div class="sheet col g12" style="padding-top: 16px">
+<a class="row g12 sm" href="ClubRun.dc.html"><span class="crest cc" style="width: 30px; height: 30px; font-size: 10px">CC</span><span class="grow">Running near your club’s turf? <b class="cb">Switch to club run</b></span></a>
+<div class="row g8"><a class="btn grow" href="SoloRun.dc.html" style="height: 68px; font-size: 18px">Pause</a><a class="btn btn-c grow" href="Profile.dc.html" style="height: 68px; font-size: 18px">Finish</a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

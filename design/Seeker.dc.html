@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chase: seeker view</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./runco.css">
+</head>
+<body>
+<x-dc>
+<helmet><style>body{margin:0}</style></helmet>
+<div class="scr dark">
+<div class="map" style="background-position: 85% 45%"></div>
+<div class="zone" style="left: 20px; top: 200px; width: 350px; height: 350px"></div>
+<div class="pin" style="left: 86px; top: 280px"><b></b><span>PRIYA 0:28 AGO</span></div>
+<div class="pin" style="left: 236px; top: 430px"><b></b><span>KABIR 0:28 AGO</span></div>
+<div class="pin" style="left: 196px; top: 245px"><b></b><span>DEV 0:28 AGO</span></div>
+<div class="pin old" style="left: 66px; top: 470px"><b></b><span>SANA 5:28 AGO</span></div>
+<div class="mate" style="left: 170px; top: 360px"><b></b><span>ARJUN</span></div>
+<div class="mate" style="left: 270px; top: 320px"><b></b><span>ROHIT</span></div>
+<div class="top col g8" style="align-items: stretch">
+<div class="hud">
+<div class="hudc col"><span class="lbl">Time left</span><span class="num" style="font-size: 42px">31:18</span></div>
+<div class="hudc col"><span class="lbl">Next ping</span><span class="num" style="font-size: 42px; color: #FFB020">4:32</span></div>
+</div>
+<div class="hudc row between" style="flex: none; padding: 10px 14px"><span class="sm b7">Seekers · 2 tags · 4 hiding</span><span class="chip chip-m" style="height: 26px">+3 / TAG</span></div>
+</div>
+<div class="sheet col g12" style="padding-top: 16px">
+<div class="row between"><span class="chip chip-n">YOU’RE OUT · WATCHING SEEKERS</span></div>
+<div class="row between"><div class="col"><span class="lbl">Freshest ping</span><span class="h3">Dev · 120 m north of Arjun</span></div><span class="num" style="font-size: 30px">0:28</span></div>
+<div class="seg"><span class="on">Map</span><a href="Radio.dc.html">Team chat</a><a href="GameMenu.dc.html">More</a></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

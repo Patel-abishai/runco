@@ -37,32 +37,23 @@
    "radius": 44,
    "title": "03 Onboard2"
   },
-  "Onboard3.dc.html": {
+  "SignIn.dc.html": {
    "x": 1410,
    "y": 0,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "04 Onboard3"
+   "title": "04 SignIn"
   },
-  "SignIn.dc.html": {
+  "Permissions.dc.html": {
    "x": 1880,
    "y": 0,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "05 SignIn"
-  },
-  "Permissions.dc.html": {
-   "x": 2350,
-   "y": 0,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "06 Permissions"
+   "title": "05 Permissions"
   },
   "Home.dc.html": {
    "x": 0,
@@ -71,10 +62,19 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "07 Home"
+   "title": "06 Home"
+  },
+  "PlaySheet.dc.html": {
+   "x": 470,
+   "y": 1224,
+   "w": 390,
+   "h": 844,
+   "is_interactive": true,
+   "radius": 44,
+   "title": "07 PlaySheet"
   },
   "JoinCode.dc.html": {
-   "x": 470,
+   "x": 940,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -82,50 +82,32 @@
    "radius": 44,
    "title": "08 JoinCode"
   },
-  "Explore.dc.html": {
-   "x": 940,
-   "y": 1224,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "09 Explore"
-  },
-  "PlaySheet.dc.html": {
+  "Demo.dc.html": {
    "x": 1410,
    "y": 1224,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "10 PlaySheet"
+   "title": "09 Demo"
   },
-  "Demo.dc.html": {
+  "Club.dc.html": {
    "x": 1880,
    "y": 1224,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "11 Demo"
+   "title": "10 Club"
   },
-  "Club.dc.html": {
+  "ClubChat.dc.html": {
    "x": 2350,
    "y": 1224,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "12 Club"
-  },
-  "ClubChat.dc.html": {
-   "x": 2820,
-   "y": 1224,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "13 ClubChat"
+   "title": "11 ClubChat"
   },
   "Paywall.dc.html": {
    "x": 0,
@@ -134,70 +116,61 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "14 Paywall"
+   "title": "12 Paywall"
   },
-  "ClubPro.dc.html": {
+  "HostChase.dc.html": {
    "x": 470,
    "y": 2448,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "15 ClubPro"
+   "title": "13 HostChase"
   },
-  "HostChase.dc.html": {
+  "ChaseOptions.dc.html": {
    "x": 940,
    "y": 2448,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "16 HostChase"
+   "title": "14 ChaseOptions"
   },
-  "HostRaid.dc.html": {
+  "Invite.dc.html": {
    "x": 1410,
    "y": 2448,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "17 HostRaid"
+   "title": "15 Invite"
   },
-  "Invite.dc.html": {
+  "Lobby.dc.html": {
    "x": 1880,
    "y": 2448,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "18 Invite"
+   "title": "16 Lobby"
   },
-  "Lobby.dc.html": {
+  "Report.dc.html": {
    "x": 2350,
    "y": 2448,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "19 Lobby"
+   "title": "17 Report"
   },
-  "Report.dc.html": {
-   "x": 2820,
-   "y": 2448,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "20 Report"
-  },
-  "Runner.dc.html": {
+  "Hider.dc.html": {
    "x": 0,
    "y": 3672,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "21 Runner"
+   "title": "18 Hider"
   },
   "Ping.dc.html": {
    "x": 470,
@@ -206,7 +179,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "22 Ping"
+   "title": "19 Ping"
   },
   "Lock.dc.html": {
    "x": 940,
@@ -215,7 +188,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "23 Lock"
+   "title": "20 Lock"
   },
   "OutZone.dc.html": {
    "x": 1410,
@@ -224,7 +197,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "24 OutZone"
+   "title": "21 OutZone"
   },
   "Tagged.dc.html": {
    "x": 1880,
@@ -233,16 +206,16 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "25 Tagged"
+   "title": "22 Tagged"
   },
-  "Hunter.dc.html": {
+  "Seeker.dc.html": {
    "x": 2350,
    "y": 3672,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "26 Hunter"
+   "title": "23 Seeker"
   },
   "Radio.dc.html": {
    "x": 2820,
@@ -251,7 +224,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "27 Radio"
+   "title": "24 Radio"
   },
   "GameMenu.dc.html": {
    "x": 3290,
@@ -260,7 +233,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "28 GameMenu"
+   "title": "25 GameMenu"
   },
   "RoundOver.dc.html": {
    "x": 3760,
@@ -269,7 +242,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "29 RoundOver"
+   "title": "26 RoundOver"
   },
   "ShareCard.dc.html": {
    "x": 4230,
@@ -278,52 +251,52 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "30 ShareCard"
+   "title": "27 ShareCard"
   },
-  "RaidGame.dc.html": {
+  "ClubPro.dc.html": {
    "x": 0,
    "y": 4896,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "31 RaidGame"
+   "title": "28 ClubPro"
   },
-  "RaidCarry.dc.html": {
+  "Turf.dc.html": {
    "x": 470,
    "y": 4896,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "32 RaidCarry"
+   "title": "29 Turf"
   },
-  "RaidDrop.dc.html": {
+  "ClubRun.dc.html": {
    "x": 940,
    "y": 4896,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "33 RaidDrop"
+   "title": "30 ClubRun"
   },
-  "RaidOver.dc.html": {
+  "RunSummary.dc.html": {
    "x": 1410,
    "y": 4896,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "34 RaidOver"
+   "title": "31 RunSummary"
   },
-  "Turf.dc.html": {
+  "SoloRun.dc.html": {
    "x": 1880,
    "y": 4896,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "35 Turf"
+   "title": "32 SoloRun"
   },
   "Ranks.dc.html": {
    "x": 0,
@@ -332,7 +305,7 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "36 Ranks"
+   "title": "33 Ranks"
   },
   "RanksClubs.dc.html": {
    "x": 470,
@@ -341,34 +314,34 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "37 RanksClubs"
+   "title": "34 RanksClubs"
   },
-  "RanksCities.dc.html": {
+  "RanksOff.dc.html": {
    "x": 940,
    "y": 6120,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "38 RanksCities"
+   "title": "35 RanksOff"
   },
-  "RanksOff.dc.html": {
+  "Profile.dc.html": {
    "x": 1410,
    "y": 6120,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "39 RanksOff"
+   "title": "36 Profile"
   },
-  "Profile.dc.html": {
+  "Badges.dc.html": {
    "x": 1880,
    "y": 6120,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "40 Profile"
+   "title": "37 Badges"
   },
   "Settings.dc.html": {
    "x": 2350,
@@ -377,50 +350,47 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "41 Settings"
+   "title": "38 Settings"
   }
  },
  "order": [
   "Main.dc.html",
   "Onboard1.dc.html",
   "Onboard2.dc.html",
-  "Onboard3.dc.html",
   "SignIn.dc.html",
   "Permissions.dc.html",
   "Home.dc.html",
-  "JoinCode.dc.html",
-  "Explore.dc.html",
   "PlaySheet.dc.html",
+  "JoinCode.dc.html",
   "Demo.dc.html",
   "Club.dc.html",
   "ClubChat.dc.html",
   "Paywall.dc.html",
-  "ClubPro.dc.html",
   "HostChase.dc.html",
-  "HostRaid.dc.html",
+  "ChaseOptions.dc.html",
   "Invite.dc.html",
   "Lobby.dc.html",
   "Report.dc.html",
-  "Runner.dc.html",
+  "Hider.dc.html",
   "Ping.dc.html",
   "Lock.dc.html",
   "OutZone.dc.html",
   "Tagged.dc.html",
-  "Hunter.dc.html",
+  "Seeker.dc.html",
   "Radio.dc.html",
   "GameMenu.dc.html",
   "RoundOver.dc.html",
   "ShareCard.dc.html",
-  "RaidGame.dc.html",
-  "RaidCarry.dc.html",
-  "RaidDrop.dc.html",
-  "RaidOver.dc.html",
+  "ClubPro.dc.html",
   "Turf.dc.html",
+  "ClubRun.dc.html",
+  "RunSummary.dc.html",
+  "SoloRun.dc.html",
   "Ranks.dc.html",
   "RanksClubs.dc.html",
-  "RanksCities.dc.html",
   "RanksOff.dc.html",
   "Profile.dc.html",
+  "Badges.dc.html",
   "Settings.dc.html"
  ],
  "notes": {
@@ -429,21 +399,21 @@
    "y": -260,
    "text": "Onboarding",
    "kind": "title1",
-   "maxW": 2820
+   "maxW": 2350
   },
   "row1": {
    "x": 0,
    "y": 964,
-   "text": "Home and discovery",
+   "text": "Home and clubs",
    "kind": "title1",
-   "maxW": 3290
+   "maxW": 2820
   },
   "row2": {
    "x": 0,
    "y": 2188,
-   "text": "Hosting",
+   "text": "Hosting Chase",
    "kind": "title1",
-   "maxW": 3290
+   "maxW": 2820
   },
   "row3": {
    "x": 0,
@@ -455,7 +425,7 @@
   "row4": {
    "x": 0,
    "y": 4636,
-   "text": "Raid and Turf",
+   "text": "Turf",
    "kind": "title1",
    "maxW": 2350
   },
