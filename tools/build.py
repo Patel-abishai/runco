@@ -14,8 +14,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DESIGN = ROOT / "design"
 
 BLOBS = {
-    "/_blob/52554c2757ef985499d62e346cb82b23": "assets/map-night.svg",
-    "/_blob/c06726c0ba7f1b60b039ed44c5242319": "assets/turf-v2.svg",
+    "/_blob/096548c2ea7d2199c49a3ee14169a9a9": "assets/map-volt.svg",
+    "/_blob/e507183b3608546ed67fa0d7e3c2e9b7": "assets/turf-volt.svg",
 }
 FONT_IMPORT = '@import url("https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap");\n'
 
@@ -69,7 +69,7 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#F7F5F0">
+<meta name="theme-color" content="#F3F4EC">
 <title>run.co · prototype</title>
 <link rel="stylesheet" href="styles/runco.css">
 <link rel="stylesheet" href="styles/shell.css">
