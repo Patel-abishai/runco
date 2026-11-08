@@ -2,10 +2,10 @@
 
 Clickable, high-fidelity front-end prototype for **run.co**: a social app for Indian run clubs where people play real-world GPS games on foot across real streets. Launch city: Bengaluru.
 
-Two games:
+Two modes:
 
-- **Chase**: hide and seek. Hunters vs Runners, pings every few minutes, shrinking zone, Classic and Infection modes.
-- **Raid**: club vs club capture the flag. Hold 10 s on the enemy flag, carry it home, win turf on the Bengaluru hex map.
+- **Chase**: hide and seek with friends. 1 to 2 seekers, everyone else hides. Seekers only see pings of where hiders were, every few minutes.
+- **Turf**: async territory capture. Club members' normal runs paint Bengaluru's hex map. Rivals can steal hexes; your club gets a 5-day window to reclaim them.
 
 ## Run it
 
@@ -20,18 +20,18 @@ On desktop you get a 390 x 844 phone frame plus a list of every screen. On a pho
 
 Deploys as-is to GitHub Pages, Vercel or Netlify (static site, root folder).
 
-## The flow (41 screens)
+## The flow (38 screens)
 
 | Section | Screens |
 | --- | --- |
-| Onboarding | Splash, Chase / Raid / Turf cards, sign-in (email code or Google), location permission |
-| Home and discovery | Home feed with stories, Join with code, Explore map, Play + sheet, demo round vs bots, club profile, club chat |
-| Hosting | Hosting unlock (₹499), Club Pro (₹2,999), Host Chase setup, Host Raid setup, invite share sheet, lobby, report / block |
-| Chase in game | Runner view, Ping flash, lock-screen alerts, out-of-zone warning, tag confirm, Hunter view, Team Radio, round menu, round over, story card |
-| Raid and Turf | Flag hold timer, carrying the flag, flag dropped, Raid over, Bengaluru Turf |
-| Ranks and you | Ranks (Players / Clubs / Cities), leaderboards-off state, profile, settings |
+| Onboarding | Cobalt splash, Chase and Turf cards, sign-in (email code or Google), location permission |
+| Home and clubs | Home feed with stories, Play sheet, Join with code, demo vs bots, club page, club chat |
+| Hosting Chase | Hosting unlock (₹499), setup with presets, More options, invite, lobby with seeker picks, report / block |
+| Chase in game | Hider view, Mango ping flash, lock-screen alerts, out-of-zone warning, tag confirm, seeker view, team chat, game menu, Cobalt round over, story card |
+| Turf | Club Pro (₹2,999), Bengaluru Turf map, club run in progress, run summary, solo run |
+| Ranks and you | Ranks (Players / Clubs), leaderboards-off state, profile dashboard, badges, settings |
 
-Three taps from a cold open to a live game: Splash → **Play a demo round now** → **Start demo**.
+Two taps from a cold open to a live game: Splash → **Play a demo now** → **Start demo**.
 
 ## Structure
 
@@ -49,11 +49,13 @@ Edit a screen in `design/`, then run `python3 tools/build.py`.
 
 ## Design system
 
-- Font: Satoshi (Fontshare), Medium for body, Bold / Black for headings and big numbers.
-- Base `#0E0E10`, text `#F4F3EE`, accent lime `#C6FF3D` (primary actions, your team), hot `#FF4D2E` (opposing team, danger).
-- 20 px cards, 44 px minimum targets, glow only on live elements.
-- Rule of colour: lime is always *your* side. As a runner your teammates are lime; once you switch to hunter, hunters turn lime and runner pings turn hot.
+- Font: Satoshi (Fontshare). Black for headings and big numbers, Medium for body.
+- Light mode. Paper `#F7F5F0` background, White cards, Midnight `#0B1026` text, in-game bars and map.
+- Cobalt `#2B3BFF`: brand, primary buttons, your team, your club's turf. Used full-bleed on splash, round over and turf captured.
+- Mango `#FFB020`: seekers, pings, rival turf, alerts. Full-bleed on the ping flash.
+- Mint `#2EE59D`: success (reclaimed, never caught).
+- Flat colour, 20 px cards, no gradients, no heavy shadows, one primary action per screen.
 
 ## Not real yet
 
-This is a front-end prototype. GPS, auth, payments, chat and push are mocked with sample data (Cubbon Crew, HSR Hustlers, @priya, @arjun.k, @meghna.runs). Sliders and toggles are visual.
+This is a front-end prototype. GPS, auth, payments, chat and push are mocked with sample data (Cubbon Crew, HSR Hustlers, Indiranagar Night Runners, @priya, @arjun.k, @meghna.runs). Sliders and toggles are visual.
