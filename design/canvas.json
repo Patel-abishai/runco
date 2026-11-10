@@ -19,41 +19,23 @@
    "radius": 44,
    "title": "01 Splash"
   },
-  "Onboard1.dc.html": {
+  "SignIn.dc.html": {
    "x": 470,
    "y": 0,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "02 Onboard1"
+   "title": "02 SignIn"
   },
-  "Onboard2.dc.html": {
-   "x": 940,
-   "y": 0,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "03 Onboard2"
-  },
-  "SignIn.dc.html": {
+  "Permissions.dc.html": {
    "x": 1410,
    "y": 0,
    "w": 390,
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "04 SignIn"
-  },
-  "Permissions.dc.html": {
-   "x": 1880,
-   "y": 0,
-   "w": 390,
-   "h": 844,
-   "is_interactive": true,
-   "radius": 44,
-   "title": "05 Permissions"
+   "title": "04 Location"
   },
   "Home.dc.html": {
    "x": 0,
@@ -62,10 +44,10 @@
    "h": 844,
    "is_interactive": true,
    "radius": 44,
-   "title": "06 Home"
+   "title": "05 Home"
   },
   "PlaySheet.dc.html": {
-   "x": 470,
+   "x": 940,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -74,7 +56,7 @@
    "title": "07 PlaySheet"
   },
   "JoinCode.dc.html": {
-   "x": 940,
+   "x": 1410,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -83,7 +65,7 @@
    "title": "08 JoinCode"
   },
   "Demo.dc.html": {
-   "x": 1410,
+   "x": 1880,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -92,7 +74,7 @@
    "title": "09 Demo"
   },
   "Club.dc.html": {
-   "x": 1880,
+   "x": 2350,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -101,7 +83,7 @@
    "title": "10 Club"
   },
   "ClubChat.dc.html": {
-   "x": 2350,
+   "x": 2820,
    "y": 1224,
    "w": 390,
    "h": 844,
@@ -351,15 +333,33 @@
    "is_interactive": true,
    "radius": 44,
    "title": "38 Settings"
+  },
+  "Verify.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "is_interactive": true,
+   "radius": 44,
+   "title": "03 Verify code"
+  },
+  "Games.dc.html": {
+   "x": 470,
+   "y": 1224,
+   "w": 390,
+   "h": 844,
+   "is_interactive": true,
+   "radius": 44,
+   "title": "06 Games (soon)"
   }
  },
  "order": [
   "Main.dc.html",
-  "Onboard1.dc.html",
-  "Onboard2.dc.html",
   "SignIn.dc.html",
+  "Verify.dc.html",
   "Permissions.dc.html",
   "Home.dc.html",
+  "Games.dc.html",
   "PlaySheet.dc.html",
   "JoinCode.dc.html",
   "Demo.dc.html",
@@ -406,7 +406,7 @@
    "y": 964,
    "text": "Home and clubs",
    "kind": "title1",
-   "maxW": 2820
+   "maxW": 3290
   },
   "row2": {
    "x": 0,
