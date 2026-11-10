@@ -4,7 +4,7 @@ Clickable, high-fidelity front-end prototype for **run.co**: a social app for In
 
 Two modes:
 
-- **Chase**: hide and seek with friends. 1 to 2 hunters, everyone else runs and hides. Hunters only see pings of where runners were, every few minutes.
+- **Chase**: hide and seek with friends. No player cap. The app picks the hunters at random when the game starts (35% of players, never shown to users), everyone else runs and hides. Hunters only see pings of where runners were, every few minutes.
 - **Turf**: async territory capture. Club members' normal runs paint Bengaluru's hex map. Rivals can steal hexes; your club gets a 5-day window to reclaim them.
 
 ## Run it
@@ -24,14 +24,16 @@ Deploys as-is to GitHub Pages, Vercel or Netlify (static site, root folder).
 
 | Section | Screens |
 | --- | --- |
-| Onboarding | Volt splash, Chase and Turf cards, sign-in (email code or Google), location permission |
-| Home and clubs | Home feed with stories, Play sheet, Join with code, demo vs bots, club page, club chat |
-| Hosting Chase | Hosting unlock (₹499), setup with presets, More options, invite, lobby with hunter picks, report / block |
+| Onboarding | Splash, sign-in (phone or email, one field), code entry with a thank-you note, location permission (asked at the first game, not at signup) |
+| Home and clubs | Home (one Chase card with a 3-step how-it-works), Games coming soon (13 expandable game ideas), Play sheet, Join with code, demo vs bots, club page, club chat |
+| Hosting Chase | Hosting unlock (₹499), setup with presets, More options, invite, lobby (hunters assigned at random on start), report / block |
 | Chase in game | Runner view, Hunter-pink ping flash, lock-screen alerts, out-of-zone warning, tag confirm, hunter view, team chat, game menu, Volt round over, story card |
 | Turf | Club Pro (₹2,999), Bengaluru Turf map, club run in progress, run summary, solo run |
 | Ranks and you | Ranks (Players / Clubs), leaderboards-off state, profile dashboard, badges, settings |
 
-Two taps from a cold open to a live game: Splash → **Play a demo now** → **Start demo**.
+Signup is two screens: Splash → **Get started** → enter phone or email → enter code → Home.
+
+From a cold open to a live game: Splash → **Play a demo now** → **Start demo** → allow location.
 
 ## Structure
 
