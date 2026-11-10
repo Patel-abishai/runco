@@ -168,3 +168,11 @@ body{margin:0;background:var(--paper)}
 .ripple.d2{animation-delay:.6s}.ripple.d3{animation-delay:1.2s}
 .rise{animation:rc-up .45s ease-out both}
 .pop{animation:rc-pop .5s ease-out both}
+/* games list (expandable) */
+.gm summary{list-style:none;display:flex;align-items:center;gap:12px;padding:14px 0;cursor:pointer}
+.gm summary::-webkit-details-marker{display:none}
+.gm-n{width:32px;height:32px;border-radius:10px;background:var(--soft);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;flex:none;font-variant-numeric:tabular-nums}
+.gm[open] .gm-n{background:var(--ink);color:var(--volt)}
+.gm-c{flex:none;transition:transform .2s}
+.gm[open] .gm-c{transform:rotate(180deg)}
+.gm-b{padding:0 0 16px 44px}
